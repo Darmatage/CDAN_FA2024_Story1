@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.1, y: 2.0837}
-  m_SizeDelta: {x: 817.8, y: 217.8326}
+  m_AnchoredPosition: {x: 0.7331, y: 0.2005}
+  m_SizeDelta: {x: 1223.44, y: 217.1467}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8090472984375361786
 CanvasRenderer:
@@ -129,7 +129,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -1.0539551, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -170,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10.4071, y: 2.0837}
-  m_SizeDelta: {x: 803.1858, y: 217.83}
+  m_AnchoredPosition: {x: -10.1985, y: 0.2005}
+  m_SizeDelta: {x: 1201.5771, y: 217.1441}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2335995262453738659
 CanvasRenderer:
@@ -307,8 +307,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -205, y: -228}
-  m_SizeDelta: {x: 850, y: 250}
+  m_AnchoredPosition: {x: 0, y: -228}
+  m_SizeDelta: {x: 1264, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3650711273314132071
 CanvasRenderer:
@@ -331,14 +331,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9339623, g: 0.5815827, b: 0.44642216, a: 0.5882353}
+  m_Color: {r: 0.9339623, g: 0.5815827, b: 0.44642216, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 342d84b67d3911b4cab0150e18f621cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -409,14 +409,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5943396, g: 0.20558912, b: 0.20558912, a: 0.5882353}
+  m_Color: {r: 0.8509804, g: 0.20558912, b: 0.20558912, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 342d84b67d3911b4cab0150e18f621cc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
