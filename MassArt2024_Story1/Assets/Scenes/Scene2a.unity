@@ -156,7 +156,7 @@ PrefabInstance:
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1237565112}
+      objectReference: {fileID: 0}
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice1aFunct
@@ -363,7 +363,7 @@ PrefabInstance:
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1237565112}
+      objectReference: {fileID: 0}
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Choice1bFunct
@@ -848,7 +848,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1237565107}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e7e74ac757af9545a8cd050e01a818c, type: 3}
+  m_Script: {fileID: 11500000, guid: b43d5f6fae690044c9bcb54102741370, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -863,7 +863,6 @@ MonoBehaviour:
   Choice1b: {fileID: 438154703}
   NextScene1Button: {fileID: 187003180600293834}
   NextScene2Button: {fileID: 1584473304}
-  NextScene3Button: {fileID: 2030485765}
   nextButton: {fileID: 775701735057816183}
 --- !u!1 &1242434146
 GameObject:
@@ -1199,7 +1198,7 @@ PrefabInstance:
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1237565112}
+      objectReference: {fileID: 0}
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange3
@@ -1325,7 +1324,7 @@ PrefabInstance:
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1237565112}
+      objectReference: {fileID: 0}
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange2
@@ -1586,11 +1585,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7973496716599497950, guid: 2a7a7af65fb404c75b029cd7268f2611, type: 3}
   m_PrefabInstance: {fileID: 1999586429}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2030485765 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 9107332809359383630, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
-  m_PrefabInstance: {fileID: 1547770312}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &187003180600293834 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9107332809359383630, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
@@ -1706,7 +1700,7 @@ PrefabInstance:
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1237565112}
+      objectReference: {fileID: 0}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Next
@@ -1739,7 +1733,7 @@ PrefabInstance:
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1237565112}
+      objectReference: {fileID: 0}
     - target: {fileID: 644272787589805955, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: SceneChange1
