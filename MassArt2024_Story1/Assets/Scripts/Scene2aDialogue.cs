@@ -21,10 +21,12 @@ public class Scene2aDialogue : MonoBehaviour {
        //public GameObject ArtChar1b;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
-        public GameObject Choice1a;
-        public GameObject Choice1b;
+        public GameObject Choice2a;
+        public GameObject Choice2b;
+        public GameObject Choice2c;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+        public GameObject NextScene3Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -34,10 +36,12 @@ public class Scene2aDialogue : MonoBehaviour {
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
              ArtBG1.SetActive(true);
-             Choice1a.SetActive(false);
-             Choice1b.SetActive(false);
+             Choice2a.SetActive(false);
+             Choice2b.SetActive(false);
+             Choice2c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
+             NextScene3Button.SetActive(false);
              nextButton.SetActive(true);
         }
 
@@ -53,95 +57,114 @@ public class Scene2aDialogue : MonoBehaviour {
 //Story Units! The main story function. Players hit [NEXT] to progress to the next primeInt:
 public void Next(){
         primeInt = primeInt + 1;
-        if (primeInt == 1){
-                // audioSource1.Play();
+        if (primeInt == 1)
+        {
+            // audioSource1.Play();
         }
-        else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Wakey wakey, human.";
-        }
-       else if (primeInt ==3){
-                Char1name.text = "YOU";
-                Char1speech.text = "Wuh..? What happened?";
-                Char2name.text = "";
-                Char2speech.text = "";
-                //gameHandler.AddPlayerStat(1);
-        }
-       else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I know I did not hit you that hard.";
-        }
-       else if (primeInt == 5){
-                Char1name.text = "YOU";
-                Char1speech.text = "Hit me? Why?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 6){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
-        }
-       else if (primeInt ==7){
-                Char1name.text = "YOU";
-                Char1speech.text = "Why do you think I know anything?";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 8){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not play the stupid. You will take me to him.";
-                // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+        else if (primeInt == 2)
+        {
+            ArtChar1a.SetActive(true);
+            DialogueDisplay.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Wha- a playground? I didn’t know I was following a comedian. I’m not some toddler you know!";
+            
         }
 
-       // after choice 1a
-       else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Then you are no use to me, and must be silenced.";
+
+        else if (primeInt == 3)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            //gameHandler.AddPlayerStat(1);
+            Choice2a.SetActive(true); // function Choice1aFunct()
+            Choice2b.SetActive(true); // function Choice1bFunct()
+            Choice2c.SetActive(true); // function Choice1bFunct()
+            nextButton.SetActive(false);
+            allowSpace = false;
         }
-       else if (primeInt == 21){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Come back here! Do not think you can hide from me!";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
+        else if (primeInt == 4)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jeda";
+            Char2speech.text = "I know I did not hit you that hard.";
+        }
+        else if (primeInt == 5)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Hit me? Why?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 6)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jeda";
+            Char2speech.text = "I am searching for a fugitive. Ragu Fahn.";
+        }
+        else if (primeInt == 7)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Why do you think I know anything?";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 8)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jeda";
+            Char2speech.text = "Do not play the stupid. You will take me to him.";
+            // Turn off the "Next" button, turn on "Choice" buttons
+            nextButton.SetActive(false);
+            allowSpace = false;
         }
 
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Jeda";
-                Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+
+        // after choice 1a
+        else if (primeInt == 20)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jeda";
+            Char2speech.text = "Then you are no use to me, and must be silenced.";
         }
-       else if (primeInt == 31){
-                Char1name.text = "YOU";
-                Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene2Button.SetActive(true);
+        else if (primeInt == 21)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jeda";
+            Char2speech.text = "Come back here! Do not think you can hide from me!";
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+        }
+
+        // after choice 1b
+        else if (primeInt == 30)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Jeda";
+            Char2speech.text = "Do not think you can fool me, human. Where will we find him?";
+        }
+        else if (primeInt == 31)
+        {
+            Char1name.text = "YOU";
+            Char1speech.text = "Ragu hangs out in a rough part of town. I'll take you now.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            // Turn off the "Next" button, turn on "Scene" button/s
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -154,8 +177,8 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 19;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -165,8 +188,8 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
+                Choice2a.SetActive(false);
+                Choice2b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
