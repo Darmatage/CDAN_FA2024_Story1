@@ -169,6 +169,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Ok, cool… I’ll follow you there";
+                GameHandler.killerFriendship+=1;
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 primeInt = 19;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
@@ -181,6 +183,8 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
+                GameHandler.killerFriendship-=1;
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);

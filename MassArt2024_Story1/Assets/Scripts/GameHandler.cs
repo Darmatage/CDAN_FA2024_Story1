@@ -9,7 +9,7 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour
 {
 
-    public static int playerStat1;
+    public static int killerFriendship;
 
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;
@@ -45,6 +45,19 @@ public class GameHandler : MonoBehaviour
         //if (Input.GetKey("p")){
         //       Debug.Log("Player Stat = " + playerStat1);
         //}
+
+
+    }
+
+    public void friendshipTest(){
+
+        if (killerFriendship < -10){
+
+            SceneManager.LoadScene("SceneLose");
+
+        }
+
+
     }
 
     void Pause()
