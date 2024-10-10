@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class Scene2aDialogue : MonoBehaviour {
+public class Scene2bDialogue : MonoBehaviour {
         // These are the script variables.
         // For more character images or buttons, duplicate the ArtChar ones listed here and renumber.
         public int primeInt = 1;        // This integer drives game progress!
