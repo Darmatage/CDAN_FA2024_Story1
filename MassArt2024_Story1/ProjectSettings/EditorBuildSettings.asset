@@ -18,12 +18,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SceneWin.unity
     guid: 8498900586a6eb043b85f7c911348f24
   - enabled: 1
-    path: Assets/Scenes/ExampleScene.unity
-    guid: a29cd79db79fc524182ddef6f61262c7
-  - enabled: 1
     path: Assets/Scenes/Scene1.unity
     guid: d01bef5151770404481818b2e186eda8
   - enabled: 1
     path: Assets/Scenes/Scene2a.unity
-    guid: bab12fa93a56a44a2bb90ef82cdfbca6
+    guid: fd76bd196bd4c4b188ffbbbd611366a0
+  - enabled: 1
+    path: Assets/Scenes/Scene2b.unity
+    guid: 844cb453b4fe948278aa11a8ab3fa250
+  - enabled: 1
+    path: Assets/Scenes/Scene2c.unity
+    guid: fe01f415025364d29ad1a35dc14d85cf
   m_configObjects: {}
