@@ -367,7 +367,7 @@ PrefabInstance:
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732396327}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Next
@@ -1551,6 +1551,7 @@ GameObject:
   - component: {fileID: 1732396325}
   - component: {fileID: 1732396324}
   - component: {fileID: 1732396327}
+  - component: {fileID: 1732396328}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1665,7 +1666,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1732396322}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0e86c1dfff90466d9b5aaa8cabec456, type: 3}
+  m_Script: {fileID: 11500000, guid: eea02a857c3077f40a430d55ba61b186, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
@@ -1675,6 +1676,37 @@ MonoBehaviour:
   Char2speech: {fileID: 323552926}
   Char3name: {fileID: 891057132}
   Char3speech: {fileID: 1194970108}
+  DialogueDisplay: {fileID: 295588768}
+  ArtChar1a: {fileID: 989634262}
+  ArtChar1b: {fileID: 968402102}
+  ArtChar2: {fileID: 2124100850}
+  ArtBG1: {fileID: 493294047}
+  Choice1a: {fileID: 1831249682}
+  Choice1b: {fileID: 1791745035}
+  Choice1c: {fileID: 1907531182}
+  NextScene1Button: {fileID: 1744998682}
+  NextScene2Button: {fileID: 1627164431}
+  NextScene3Button: {fileID: 1904256317}
+  nextButton: {fileID: 1360319305}
+--- !u!114 &1732396328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732396322}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7a92cc5cb8ad4c3faeba426984a2b32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primeInt: 1
+  Char1name: {fileID: 0}
+  Char1speech: {fileID: 0}
+  Char2name: {fileID: 0}
+  Char2speech: {fileID: 0}
+  Char3name: {fileID: 0}
+  Char3speech: {fileID: 0}
   DialogueDisplay: {fileID: 295588768}
   ArtChar1a: {fileID: 0}
   ArtChar1b: {fileID: 0}
