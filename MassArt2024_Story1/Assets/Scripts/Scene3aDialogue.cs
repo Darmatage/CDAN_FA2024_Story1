@@ -136,7 +136,7 @@ public class Scene3aDialogue : MonoBehaviour {
 
         // after choice 1a
         
-        else if (primeInt == 20)
+            else if (primeInt == 20)
             {
                 Char1name.text = "You";
                 Char1speech.text = "You enjoy your own company. In life we aren't guaranteed companionship in any way...";
@@ -209,7 +209,7 @@ public class Scene3aDialogue : MonoBehaviour {
                 NextScene1Button.SetActive(true); //Go to Mall
                 NextScene2Button.SetActive(true); //Go to Mill
             }
-        }
+        
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
