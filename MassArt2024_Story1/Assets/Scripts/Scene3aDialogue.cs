@@ -54,96 +54,161 @@ public class Scene3aDialogue : MonoBehaviour {
              }
         }
 
-//Story Units! The main story function. Players hit [NEXT] to progress to the next primeInt:
-public void Next(){
+    //Story Units! The main story function. Players hit [NEXT] to progress to the next primeInt:
+    public void Next() {
         primeInt = primeInt + 1;
-        if (primeInt == 1){
-                // audioSource1.Play();
+        if (primeInt == 1) {
+            // audioSource1.Play();
         }
-        else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "2";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 2)
+        {
+            DialogueDisplay.SetActive(true);
+            Char1name.text = "Narration";
+            Char1speech.text = "As you both sit on the swing set, the Stranger relaxes their posture while gently swaying in their seat.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt ==3){
-                Char1name.text = "3";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 3)
+        {
+            ArtChar1a.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Playgrounds break my heart...";
         }
-       else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+        else if (primeInt == 4)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Oh, I'm...sorry?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 
-       // after choice 1a
-       else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+        else if (primeInt == 5)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "I’ve always wanted to have a group of friends. Ones that were like blood to me. Ones I could make mistakes with and die happy knowing I knew them.";
         }
 
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+        else if (primeInt == 6)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "That's... interesting.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
 
-       // after choice 1c
-       else if (primeInt == 40){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 7)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Look, just humor me. For my sake... for my sanity, just humor me.";
         }
-       else if (primeInt == 41){
-                Char1name.text = "";
-                Char1speech.text = "";
+        else if (primeInt == 8)
+        {
+            Char1name.text = "Narration";
+            Char1speech.text = "You feel if you don't listen to them, this could turn sour quick.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 9)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "I hear all the time about childhood friends, and how they have these lasting memories, and hear how people are going to crazy places and doing fun stuff.";
+        }
+
+        else if (primeInt == 10)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "I didn’t get that chance and I don’t think I ever will. How do I keep on going knowing it might only ever be me?";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice1a.SetActive(true); // Choice for "You enjoy your own company"
+            Choice1b.SetActive(true); // Choice for "You keep looking"
+        }
+
+        // after choice 1a
+        
+        else if (primeInt == 20)
+            {
+                Char1name.text = "You";
+                Char1speech.text = "You enjoy your own company. In life we aren't guaranteed companionship in any way...";
                 Char2name.text = "";
                 Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
+            }
+            else if (primeInt == 21)
+            {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I mean, it's not like I can have a party by myself or go to concerts on my own...";
+            }
+            else if (primeInt == 22)
+            {
+                Char1name.text = "You";
+                Char1speech.text = "Of course you can! Get yourself a cake! Go to a bunch of local shows.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 23)
+            {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "That implies I know someone who can buy me some beer to begin with.";
+            }
+            else if (primeInt == 24)
+            {
+                Char1name.text = "Narration";
+                Char1speech.text = "It might be best if you take them somewhere else.";
+                Char2name.text = "";
+                Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+                NextScene1Button.SetActive(true); //Go to Mall
+                NextScene2Button.SetActive(true); //Go to Mill
+            }
+
+            // after choice 1b
+            else if (primeInt == 30)
+            {
+                Char1name.text = "You";
+                Char1speech.text = "You keep looking. You aren't going to enjoy everyone's company and they might not enjoy yours...";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 31)
+            {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Well my 'friends' spread rumors about me saying I want to be a lizard man...";
+            }
+            else if (primeInt == 32)
+            {
+                Char1name.text = "You";
+                Char1speech.text = "So? Sounds like they did you a favor by showing you they weren’t worth your time.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 33)
+            {
+                Char1name.text = "Narration";
+                Char1speech.text = "The stranger shuffles uncomfortably on the swing. It might be best to go somewhere else now.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene1Button.SetActive(true); //Go to Mall
+                NextScene2Button.SetActive(true); //Go to Mill
+            }
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
