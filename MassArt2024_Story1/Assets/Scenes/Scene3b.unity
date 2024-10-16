@@ -367,14 +367,14 @@ PrefabInstance:
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1732396327}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Next
       objectReference: {fileID: 0}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneDialogueTemplate, Assembly-CSharp
+      value: Scene3bDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -1676,9 +1676,9 @@ MonoBehaviour:
   Char3name: {fileID: 891057132}
   Char3speech: {fileID: 1194970108}
   DialogueDisplay: {fileID: 295588768}
-  ArtChar1a: {fileID: 0}
-  ArtChar1b: {fileID: 0}
-  ArtChar2: {fileID: 0}
+  ArtChar1a: {fileID: 989634262}
+  ArtChar1b: {fileID: 968402102}
+  ArtChar2: {fileID: 2124100850}
   ArtBG1: {fileID: 493294047}
   Choice1a: {fileID: 1831249682}
   Choice1b: {fileID: 1791745035}
