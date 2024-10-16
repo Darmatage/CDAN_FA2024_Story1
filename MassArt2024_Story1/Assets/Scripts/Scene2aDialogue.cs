@@ -174,16 +174,16 @@ public void Next(){
 
         else if (primeInt == 22)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "Wait!..";
             Char2name.text = "";
             Char2speech.text = "";
         }
 
         else if (primeInt == 23)
         {
-            Char1name.text = "";
-            Char1speech.text = "";
+            Char1name.text = "You";
+            Char1speech.text = "This place was close by. It was hard to think of anything and I knew it was near us. I didn’t mean anything by it, I swear!";
             Char2name.text = "";
             Char2speech.text = "";
         }
@@ -192,18 +192,19 @@ public void Next(){
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Right... you just don’t want to die...";
         }
 
         else if (primeInt == 25)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "...Just take me somewhere else.";
         nextButton.SetActive(false);
         allowSpace = false;
+        NextScene1Button.SetActive(true);
         NextScene2Button.SetActive(true);
         NextScene3Button.SetActive(true);
         }
@@ -213,19 +214,20 @@ public void Next(){
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "I have a FUCKING knife pointed at you and you want to say shit like this?!";
         }
         else if (primeInt == 31)
         {
             Char1name.text = "";
             Char1speech.text = "";
-            Char2name.text = "";
-            Char2speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "If you don't want little Timmy to find you lying limp bleeding all over the woodchips, I advise we leave. I may be a murderer but I’m not a monster who’s going to ruin some kids childhood.";
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene2Button.SetActive(true);
+            NextScene3Button.SetActive(true);
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -238,6 +240,8 @@ public void Next(){
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 4;
+                GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
@@ -258,10 +262,12 @@ public void Next(){
         }
         public void Choice1cFunct(){
                 Char1name.text = "YOU";
-                Char1speech.text = "Sure, anything you want... just lay off the club.";
+                Char1speech.text = "Well if I’m going to be babysitting I might as well take you to something familiar.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
+                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
                 Choice1c.SetActive(false);
