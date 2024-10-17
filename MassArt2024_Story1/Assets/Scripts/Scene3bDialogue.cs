@@ -67,6 +67,8 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Stranger";
             Char2speech.text = "Just some toys, huh? Brings back memories. My babysitter used to just cram me in front of a pile of these, while they were on their phone the entire day.";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 3)
         {
@@ -75,6 +77,8 @@ public void Next(){
             Char1speech.text = "You had a babysitter? What, they didn’t take you outside or anything?";
             Char2name.text = "";
             Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 4)
         {
@@ -82,6 +86,8 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Stranger";
             Char2speech.text = "Nope. I spent hours in places like this. Toys were my 'friends'—if you can call them that. Didn’t even know how to talk to people back then.";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 5)
         {
@@ -90,13 +96,17 @@ public void Next(){
             Char1speech.text = "A sudden movement catches your eye. A figure steps out from behind one of the counters—a toy store worker, exhausted and worn out.";
             Char2name.text = "";
             Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 6)
         {
-            Char1name.text = "Toy Store Worker";
-            Char1speech.text = "H-Hey! What are you doing here? The store’s... closed.";
+            Char1name.text = "";
+            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
+            Char3name.text = "Toy Store Worker";
+            Char3speech.text = "H-Hey! What are you doing here? The store’s... closed.";
         }
         else if (primeInt == 7)
         {
@@ -104,13 +114,17 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Stranger";
             Char2speech.text = "No kidding. Looks like you’ve been here longer than these toys.";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 8)
         {
-            Char1name.text = "Toy Store Worker";
-            Char1speech.text = "I—I didn’t punch out... I-I was just... taking inventory... and now the mall’s been closed down, and I think they forgot about me.";
+            Char1name.text = "";
+            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
+            Char3name.text = "Toy Store Worker";
+            Char3speech.text = "I—I didn’t punch out... I-I was just... taking inventory... and now the mall’s been closed down, and I think they forgot about me.";
         }
         else if (primeInt == 9)
         {
@@ -118,13 +132,18 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Stranger";
             Char2speech.text = "So, you've just been living here? Surrounded by all this?";
+            Char3name.text = "";
+            Char3speech.text = "";
         }
         else if (primeInt == 10)
         {
-            Char1name.text = "Toy Store Worker";
-            Char1speech.text = "It’s not so bad. I have the toys to keep me company, but I should... really leave. I just... don’t know where to go.";
+            Char1name.text = "";
+            Char1speech.text = "";
             Char2name.text = "";
             Char2speech.text = "";
+            Char3name.text = "Toy Store Worker";
+            Char3speech.text = "It’s not so bad. I have the toys to keep me company, but I should... really leave. I just... don’t know where to go.";
+
         }
         else if (primeInt == 11)
         {
@@ -132,6 +151,8 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Stranger";
             Char2speech.text = "What about you? Think you’re ready to leave this place? Or are you planning to stay here forever like the rest of these forgotten things?";
+            Char3name.text = "";
+            Char3speech.text = "";
             nextButton.SetActive(false);
             allowSpace = false;
             NextScene1Button.SetActive(true); // Choice for "Let’s get out of here, all of us."
@@ -148,6 +169,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 primeInt = 19;
@@ -161,6 +184,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 29;
                 GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
@@ -174,6 +199,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 39;
                 GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
