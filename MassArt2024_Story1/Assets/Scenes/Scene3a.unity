@@ -371,14 +371,14 @@ PrefabInstance:
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1732396327}
+      objectReference: {fileID: 1732396328}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Next
       objectReference: {fileID: 0}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneDialogueTemplate, Assembly-CSharp
+      value: Scene3aDialogue, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4530396053169317414, guid: 0019a1117ea43ed47abe5b53870e3442, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -801,17 +801,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b159eb3cf077a74cb44675e1e19b992, type: 3}
---- !u!114 &891057132 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3283952298486619675, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
-  m_PrefabInstance: {fileID: 1605448557}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &928416317
 GameObject:
   m_ObjectHideFlags: 0
@@ -1177,17 +1166,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 989634262}
   m_CullTransparentMesh: 1
---- !u!114 &1194970108 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4989510134345734032, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
-  m_PrefabInstance: {fileID: 1605448557}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1281404035 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 296258396357887939, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
@@ -1398,7 +1376,9 @@ PrefabInstance:
       value: DIALOGUE_DISPLAY
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7160047464135504915, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+    - {fileID: 1494061184009879293, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
@@ -1433,7 +1413,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_text
-      value: Scene1
+      value: Let's hit the Mall
       objectReference: {fileID: 0}
     - target: {fileID: 3662057847349555299, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_Pivot.x
@@ -1566,7 +1546,6 @@ GameObject:
   - component: {fileID: 1732396326}
   - component: {fileID: 1732396325}
   - component: {fileID: 1732396324}
-  - component: {fileID: 1732396327}
   - component: {fileID: 1732396328}
   m_Layer: 5
   m_Name: Canvas
@@ -1673,37 +1652,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1732396327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732396322}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea02a857c3077f40a430d55ba61b186, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  primeInt: 1
-  Char1name: {fileID: 1281404035}
-  Char1speech: {fileID: 668380028}
-  Char2name: {fileID: 390472981}
-  Char2speech: {fileID: 323552926}
-  Char3name: {fileID: 891057132}
-  Char3speech: {fileID: 1194970108}
-  DialogueDisplay: {fileID: 295588768}
-  ArtChar1a: {fileID: 989634262}
-  ArtChar1b: {fileID: 968402102}
-  ArtChar2: {fileID: 2124100850}
-  ArtBG1: {fileID: 493294047}
-  Choice1a: {fileID: 1831249682}
-  Choice1b: {fileID: 1791745035}
-  Choice1c: {fileID: 1907531182}
-  NextScene1Button: {fileID: 1744998682}
-  NextScene2Button: {fileID: 1627164431}
-  NextScene3Button: {fileID: 1904256317}
-  nextButton: {fileID: 1360319305}
 --- !u!114 &1732396328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1717,16 +1665,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   primeInt: 1
-  Char1name: {fileID: 0}
-  Char1speech: {fileID: 0}
-  Char2name: {fileID: 0}
-  Char2speech: {fileID: 0}
+  Char1name: {fileID: 1281404035}
+  Char1speech: {fileID: 668380028}
+  Char2name: {fileID: 390472981}
+  Char2speech: {fileID: 323552926}
   Char3name: {fileID: 0}
   Char3speech: {fileID: 0}
   DialogueDisplay: {fileID: 295588768}
-  ArtChar1a: {fileID: 0}
-  ArtChar1b: {fileID: 0}
-  ArtChar2: {fileID: 0}
+  ArtChar1a: {fileID: 989634262}
+  ArtChar1b: {fileID: 968402102}
+  ArtChar2: {fileID: 2124100850}
   ArtBG1: {fileID: 493294047}
   Choice1a: {fileID: 1831249682}
   Choice1b: {fileID: 1791745035}
@@ -1879,7 +1827,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_text
-      value: Scene2
+      value: An abandoned mill?
       objectReference: {fileID: 0}
     - target: {fileID: 3662057847349555299, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_Pivot.x
