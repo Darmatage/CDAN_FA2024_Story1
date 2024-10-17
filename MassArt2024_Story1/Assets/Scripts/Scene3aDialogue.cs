@@ -257,10 +257,10 @@ public class Scene3aDialogue : MonoBehaviour {
 
 
         public void SceneChange1(){
-               SceneManager.LoadScene("");
+               SceneManager.LoadScene("Scene2b");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("Scene2c");
         }
         public void SceneChange3(){
                 SceneManager.LoadScene("");
