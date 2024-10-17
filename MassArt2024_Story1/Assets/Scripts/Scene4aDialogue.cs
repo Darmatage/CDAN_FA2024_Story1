@@ -23,7 +23,8 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject ArtBG1; //Background, same logic for multiple as above
         public GameObject Choice1a;
         public GameObject Choice1b;
-        public GameObject Choice1c;
+        public GameObject Choice2a;
+        public GameObject Choice2b;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
@@ -38,7 +39,8 @@ public class Scene4aDialogue : MonoBehaviour {
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
-             Choice1c.SetActive(false);
+             Choice2a.SetActive(false);
+             Choice2b.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
@@ -63,26 +65,53 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "2";
-                Char1speech.text = "";
+                Char1name.text = "Narration";
+                Char1speech.text = "The Stranger guides you on a path you don’t recognize. The recognizable architecture and familiar streets fade away the farther and farther you travel. Your beacon of home crumbling as you are taken away to who knows where.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
-                Char1name.text = "3";
-                Char1speech.text = "";
+                Char1name.text = "Narration";
+                Char1speech.text = "You start to follow train tracks away from civilization to a bridge. The stillness of the night being evidence that you are now truly alone with this stranger.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 4){
+       else if (primeInt ==4){
                 Char1name.text = "";
                 Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I have to thank you for showing me around. Even if it was against your will you did show me some cool spots like I asked.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt ==5){
+                Char1name.text = "Narration";
+                Char1speech.text = "The stranger steps closer";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 6   ){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I’m a dead man walking, my life is over.";
+                Char3name.text = "";
+                Char3speech.text = "";
+
+        }
+       else if (primeInt == 7   ){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I’m a dead man walking, my life is over.";
+                Char3name.text = "";
+                Char3speech.text = "";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -92,52 +121,107 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 20){
+                Char1name.text = "Narration";
+                Char1speech.text = "You can still walk away from all of this. You don’t have to keep doing this if you don’t want to. You really don’t sound like the type of person who would do something like this.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 21){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I’m just tired. After everything I just don’t see a point anymore. I’ve seen what’s expected of me. I know they just want another cog in this fucked up machine.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+
+       else if (primeInt == 22){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Everyone at each other’s throats, everyone taking their shit out on eachother. If you don’t play along by absurd rules that we all openly hate then you get punished for it.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 23){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "No one wants a friend, they want a fall guy. No one want’s safety they want power. No one wants to be skilled, they want to be better.";
+                Char3name.text = "";
+                Char3speech.text = "";
+
+        }
+       else if (primeInt == 24){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I’m tired.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 25){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I’m tired.";
+                Char3name.text = "";
+                Char3speech.text = "";
+                // Turn off the "Next" button, turn on "Scene" button/s
+                nextButton.SetActive(false);
+                allowSpace = false;
+                Choice2a.SetActive(true); // function Choice2aFunct()
+                Choice2b.SetActive(true); // function Choice2bFunct()
+        }
+       // after choice 1b
+       else if (primeInt == 30){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
 
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
                 NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
         }
-
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-        }
-       else if (primeInt == 31){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
-        }
-
-       // after choice 1c
+       // after choice 2a
        else if (primeInt == 40){
+                //gameHandler.AddPlayerStat(1);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+
+                // Turn off the "Next" button, turn on "Scene" button/s
+                nextButton.SetActive(false);
+                allowSpace = false;
+                NextScene1Button.SetActive(true);
         }
-       else if (primeInt == 41){
+
+       // after choice 2b
+       else if (primeInt == 60){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 61){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
@@ -145,6 +229,7 @@ public void Next(){
                 NextScene2Button.SetActive(true);
                 NextScene3Button.SetActive(true);
         }
+
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
@@ -155,6 +240,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 primeInt = 19;
@@ -168,6 +255,8 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 29;
                 GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
@@ -176,12 +265,27 @@ public void Next(){
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
-        public void Choice1cFunct(){
+        public void Choice2aFunct(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
                 primeInt = 39;
+                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
+                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
+                Choice1a.SetActive(false);
+                Choice1b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice2bFunct(){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 49;
                 GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice1a.SetActive(false);
