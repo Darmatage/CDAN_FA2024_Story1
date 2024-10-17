@@ -713,6 +713,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9107332809359383630, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
   m_PrefabInstance: {fileID: 777574924}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &852260448 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107332809359383630, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+  m_PrefabInstance: {fileID: 973913856}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &866642698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1564,6 +1569,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3662057847349555299, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
   m_PrefabInstance: {fileID: 1996199608}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1708423724 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9107332809359383630, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+  m_PrefabInstance: {fileID: 1832641749}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1732396322
 GameObject:
   m_ObjectHideFlags: 0
@@ -1709,8 +1719,8 @@ MonoBehaviour:
   ArtBG1: {fileID: 493294047}
   Choice1a: {fileID: 777574925}
   Choice1b: {fileID: 79483510}
-  Choice2a: {fileID: 0}
-  Choice2b: {fileID: 0}
+  Choice2a: {fileID: 852260448}
+  Choice2b: {fileID: 1708423724}
   NextScene1Button: {fileID: 1614824333}
   NextScene2Button: {fileID: 1996199609}
   NextScene3Button: {fileID: 2032727233}
