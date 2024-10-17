@@ -297,8 +297,15 @@ public void Next(){
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
+                if(GameHandler.canPark){
+                        NextScene1Button.SetActive(true);
+                }
+                if(GameHandler.canMall){
+                        NextScene2Button.SetActive(true);
+                }
+                if(GameHandler.canBridge){
+                        NextScene3Button.SetActive(true);
+                }
         }
 
        // after choice 1b
@@ -489,8 +496,15 @@ public void Next(){
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
+                if(GameHandler.canPark){
+                        NextScene1Button.SetActive(true);
+                }
+                if(GameHandler.canMall){
+                        NextScene2Button.SetActive(true);
+                }
+                if(GameHandler.canBridge){
+                        NextScene3Button.SetActive(true);
+                }
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:

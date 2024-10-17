@@ -63,6 +63,7 @@ public void Next(){
         }
         else if (primeInt == 2)
         {
+            GameHandler.canPark=false;
             ArtChar1a.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "";

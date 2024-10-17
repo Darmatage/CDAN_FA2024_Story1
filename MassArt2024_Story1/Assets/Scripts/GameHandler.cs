@@ -10,7 +10,13 @@ public class GameHandler : MonoBehaviour
 {
 
     public static int killerFriendship;
-
+    public static bool canPark = true;
+    public static bool canMall = true;
+    public static bool canMill = true;
+    public static bool canToy = true;
+    public static bool canCloth = true;
+    public static bool canFood = true;
+    public static bool canBridge = false;
     public static bool GameisPaused = false;
     public GameObject pauseMenuUI;
     public AudioMixer mixer;

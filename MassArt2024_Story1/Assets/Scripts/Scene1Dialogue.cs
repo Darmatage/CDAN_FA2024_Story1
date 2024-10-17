@@ -59,7 +59,6 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Narration";
                 Char1speech.text = "It’s been a stressful week that has tested your sanity and pummeled your patience. You decide to take some time in the park to relax before the nagging feeling of responsibilities return to you and you have to head home.";
