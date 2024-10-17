@@ -1946,7 +1946,9 @@ PrefabInstance:
       value: DIALOGUE_DISPLAY
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7160047464135504915, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+    - {fileID: 1494061184009879293, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
