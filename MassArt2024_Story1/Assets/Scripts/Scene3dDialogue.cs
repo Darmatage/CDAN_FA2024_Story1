@@ -259,6 +259,7 @@ public void Next(){
                 primeInt = 19;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -272,6 +273,7 @@ public void Next(){
                 primeInt = 29;
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -287,6 +289,7 @@ public void Next(){
                 //GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
+                Choice1c.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
