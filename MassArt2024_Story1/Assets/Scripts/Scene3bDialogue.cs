@@ -60,94 +60,87 @@ public void Next(){
         if (primeInt == 1){
                 // audioSource1.Play();
         }
-        else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
-                DialogueDisplay.SetActive(true);
-                Char1name.text = "2";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 2)
+        {
+            DialogueDisplay.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Just some toys, huh? Brings back memories. My babysitter used to just cram me in front of a pile of these, while they were on their phone the entire day.";
         }
-       else if (primeInt ==3){
-                Char1name.text = "3";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+        else if (primeInt == 3)
+        {
+            ArtChar1a.SetActive(true);
+            Char1name.text = "You";
+            Char1speech.text = "You had a babysitter? What, they didn’t take you outside or anything?";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt == 4){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Choice" buttons
-                nextButton.SetActive(false);
-                allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+        else if (primeInt == 4)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Nope. I spent hours in places like this. Toys were my 'friends'—if you can call them that. Didn’t even know how to talk to people back then.";
         }
-
-       // after choice 1a
-       else if (primeInt == 20){
-                //gameHandler.AddPlayerStat(1);
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+        else if (primeInt == 5)
+        {
+            ArtChar2.SetActive(true);
+            Char1name.text = "Narration";
+            Char1speech.text = "A sudden movement catches your eye. A figure steps out from behind one of the counters—a toy store worker, exhausted and worn out.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-
-       // after choice 1b
-       else if (primeInt == 30){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 6)
+        {
+            Char1name.text = "Toy Store Worker";
+            Char1speech.text = "H-Hey! What are you doing here? The store’s... closed.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt == 31){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+        else if (primeInt == 7)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "No kidding. Looks like you’ve been here longer than these toys.";
         }
-
-       // after choice 1c
-       else if (primeInt == 40){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+        else if (primeInt == 8)
+        {
+            Char1name.text = "Toy Store Worker";
+            Char1speech.text = "I—I didn’t punch out... I-I was just... taking inventory... and now the mall’s been closed down, and I think they forgot about me.";
+            Char2name.text = "";
+            Char2speech.text = "";
         }
-       else if (primeInt == 41){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                // Turn off the "Next" button, turn on "Scene" button/s
-                nextButton.SetActive(false);
-                allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+        else if (primeInt == 9)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "So, you've just been living here? Surrounded by all this?";
+        }
+        else if (primeInt == 10)
+        {
+            Char1name.text = "Toy Store Worker";
+            Char1speech.text = "It’s not so bad. I have the toys to keep me company, but I should... really leave. I just... don’t know where to go.";
+            Char2name.text = "";
+            Char2speech.text = "";
+        }
+        else if (primeInt == 11)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "What about you? Think you’re ready to leave this place? Or are you planning to stay here forever like the rest of these forgotten things?";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true); // Choice for "Let’s get out of here, all of us."
+            NextScene2Button.SetActive(true); // Choice for "This is pointless. Let’s just move on."
+            NextScene3Button.SetActive(true); // Choice for "This mall is so boring dude, let’s just rush to the next place."
         }
 
-      //Please do NOT delete this final bracket that ends the Next() function:
-     }
+    //Please do NOT delete this final bracket that ends the Next() function:
+}
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
@@ -192,12 +185,12 @@ public void Next(){
 
 
         public void SceneChange1(){
-               SceneManager.LoadScene("");
+               SceneManager.LoadScene("Scene3c");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("Scene3d");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("Scene4a");
         } //In these quotations above put the name of next scene you want to go to
 }
