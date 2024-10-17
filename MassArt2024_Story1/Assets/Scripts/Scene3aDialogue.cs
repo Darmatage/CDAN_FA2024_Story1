@@ -139,7 +139,7 @@ public class Scene3aDialogue : MonoBehaviour {
             else if (primeInt == 20)
             {
                 Char1name.text = "You";
-                Char1speech.text = "You enjoy your own company. In life we aren't guaranteed companionship in any way...";
+                Char1speech.text = "You enjoy your own company. In life we aren’t guaranteed companionship in any way. Everyone can be your friend one day and then the next you are public enemy number 1. You need to learn to enjoy things by yourself and to love yourself.";
                 Char2name.text = "";
                 Char2speech.text = "";
             }
@@ -148,12 +148,12 @@ public class Scene3aDialogue : MonoBehaviour {
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "I mean, it's not like I can have a party by myself or go to concerts on my own...";
+                Char2speech.text = "I mean it’s not like I can have a party by myself or go to concerts on my own...";
             }
             else if (primeInt == 22)
             {
                 Char1name.text = "You";
-                Char1speech.text = "Of course you can! Get yourself a cake! Go to a bunch of local shows.";
+                Char1speech.text = "Of course you can! Get yourself a cake! Go to a bunch of local shows. Heck if you want you can get completely shit faced while you are at it.";
                 Char2name.text = "";
                 Char2speech.text = "";
             }
@@ -165,6 +165,27 @@ public class Scene3aDialogue : MonoBehaviour {
                 Char2speech.text = "That implies I know someone who can buy me some beer to begin with.";
             }
             else if (primeInt == 24)
+            {
+                Char1name.text = "You";
+                Char1speech.text = "I’m just trying to say that those things aren’t only available in groups. Don’t stop living because you think you need others to enjoy it.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 25)
+            {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "With how today’s going…I don’t think I’ll have much of a life left to live...";
+            }
+            else if (primeInt == 26)
+            {
+                Char1name.text = "Narration";
+                Char1speech.text = "It might be best if you take them somewhere else.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 27)
             {
                 Char1name.text = "Narration";
                 Char1speech.text = "It might be best if you take them somewhere else.";
@@ -180,7 +201,7 @@ public class Scene3aDialogue : MonoBehaviour {
             else if (primeInt == 30)
             {
                 Char1name.text = "You";
-                Char1speech.text = "You keep looking. You aren't going to enjoy everyone's company and they might not enjoy yours...";
+                Char1speech.text = "However there’s always people out there for you. In fact I have some friends who I knew in highschool but we weren’t friends until after graduation. We then got really close and have made some fond memories with each other.";
                 Char2name.text = "";
                 Char2speech.text = "";
             }
@@ -189,19 +210,47 @@ public class Scene3aDialogue : MonoBehaviour {
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "Well my 'friends' spread rumors about me saying I want to be a lizard man...";
+                Char2speech.text = "Ya? Well my “friends” spread rumors about me saying I want to be a lizard man. It sounds stupid until somehow most of the school thinks it’s true. It puts into perspective how easy it is to lose people.";
             }
             else if (primeInt == 32)
             {
                 Char1name.text = "You";
-                Char1speech.text = "So? Sounds like they did you a favor by showing you they weren’t worth your time.";
+                Char1speech.text = "So? Sounds like they did you a favor by showing you both they and anyone who believed that stupid rumor wasn’t worth your time. I bet if they looked back at what they did they would think how stupid they were as kids.";
                 Char2name.text = "";
                 Char2speech.text = "";
             }
             else if (primeInt == 33)
             {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I don’t think they would change their mind on something that happened a few weeks ago...";
+            }
+            else if (primeInt == 34)
+            {
+                Char1name.text = "You";
+                Char1speech.text = "They still aren’t worth your time. It doesn’t matter if it even was today. Find your people and get rid of the rest. Why should you care what people who want you to fit a mold think? If you are trying to fit into a hole not meant for you, that's way crazier than trying to be a lizard in my eyes.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 35)
+            {
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I don’t know if it’s that simple...";
+            }
+            else if (primeInt == 36)
+            {
                 Char1name.text = "Narration";
-                Char1speech.text = "The stranger shuffles uncomfortably on the swing. It might be best to go somewhere else now.";
+                Char1speech.text = "The stranger shuffles and jingles uncomfortably on the swing. It might be best to go somewhere else now.";
+                Char2name.text = "";
+                Char2speech.text = "";
+            }
+            else if (primeInt == 37)
+            {
+                Char1name.text = "Narration";
+                Char1speech.text = "The stranger shuffles and jingles uncomfortably on the swing. It might be best to go somewhere else now.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 nextButton.SetActive(false);
@@ -216,11 +265,11 @@ public class Scene3aDialogue : MonoBehaviour {
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "You";
+                Char1speech.text = "You enjoy your own company. In life we aren’t guaranteed companionship in any way.";
                 Char2name.text = "";
                 Char2speech.text = "";
-                GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
+                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 primeInt = 19;
                 Choice1a.SetActive(false);
@@ -229,25 +278,12 @@ public class Scene3aDialogue : MonoBehaviour {
                 allowSpace = true;
         }
         public void Choice1bFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "You";
+                Char1speech.text = "You keep looking. You aren’t going to enjoy everyone’s company and they might not enjoy yours. People are too scared to say if they don’t want to hang out with you but that’s ok, it means they don’t want to hurt your feelings.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 primeInt = 29;
-                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
-                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-        public void Choice1cFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                primeInt = 39;
-                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
+                GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice1a.SetActive(false);
                 Choice1b.SetActive(false);
