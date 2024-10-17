@@ -63,7 +63,7 @@ public void Next(){
         else if (primeInt == 2){
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
-                Char1name.text = "2";
+                Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
@@ -71,23 +71,130 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
-                Char1name.text = "3";
+                Char1name.text = "Narration";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 4){
+        else if (primeInt ==4){
+                Char1name.text = "You";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==5){
+                Char1name.text = "Narration";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==6){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==7){
+                Char1name.text = "Narration";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==8){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "Toy Store Worker";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==9){
+                Char1name.text = "Narration";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==10){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==11){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Toy Store Worker";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==12){
+                Char1name.text = "Narration";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==13){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==14){
+                Char1name.text = "Narration";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==15){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Toy Store Worker";
+                Char3speech.text = "";
+        }
+        else if (primeInt ==16){
+                Char1name.text = "Narration";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 17){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "What do you think? Should we stay and help them play dress-up or move on?";
+                Char3name.text = "";
+                Char3speech.text = "";
                 // Turn off the "Next" button, turn on "Choice" buttons
                 nextButton.SetActive(false);
                 allowSpace = false;
-                Choice1a.SetActive(true); // function Choice1aFunct()
-                Choice1b.SetActive(true); // function Choice1bFunct()
+                NextScene1Button.SetActive(true); // function Choice1aFunct()
+                NextScene2Button.SetActive(true); // function Choice1bFunct()
+                NextScene3Button.SetActive(true); // function Choice1bFunct()
         }
 
        // after choice 1a
@@ -192,12 +299,12 @@ public void Next(){
 
 
         public void SceneChange1(){
-               SceneManager.LoadScene("");
+               SceneManager.LoadScene("Scene3b");
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("Scene3d");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("Scene4a");
         } //In these quotations above put the name of next scene you want to go to
 }
