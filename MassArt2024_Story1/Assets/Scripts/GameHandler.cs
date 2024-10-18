@@ -18,6 +18,9 @@ public class GameHandler : MonoBehaviour
     public static bool canFood = true;
     public static bool canBridge = false;
     public static bool GameisPaused = false;
+    public static bool canEnd1 = false;
+    public static bool canEnd2 = false;
+    public static bool canEnd3 = false;
     public GameObject pauseMenuUI;
     public AudioMixer mixer;
     public static float volumeLevel = 1.0f;
@@ -57,12 +60,26 @@ public class GameHandler : MonoBehaviour
 
     public void friendshipTest(){
 
-        if (killerFriendship < -10){
+        if (killerFriendship < 0){
 
-            SceneManager.LoadScene("SceneLose");
+            GameHandler.canEnd1=true;
+            GameHandler.canEnd2=false;
+            GameHandler.canEnd3=false;
+        }
+        if (killerFriendship > -1){
+
+            GameHandler.canEnd1=false;
+            GameHandler.canEnd2=true;
+            GameHandler.canEnd3=false;
 
         }
+        if (killerFriendship > 2){
 
+            GameHandler.canEnd1=true;
+            GameHandler.canEnd2=false;
+            GameHandler.canEnd3=true;
+
+        }
 
     }
 

@@ -25,6 +25,9 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject Choice1b;
         public GameObject Choice2a;
         public GameObject Choice2b;
+        public GameObject Choice3a;
+        public GameObject Choice3b;
+        public GameObject Choice3c;
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
@@ -41,6 +44,9 @@ public class Scene4aDialogue : MonoBehaviour {
              Choice1b.SetActive(false);
              Choice2a.SetActive(false);
              Choice2b.SetActive(false);
+             Choice3a.SetActive(false);
+             Choice3b.SetActive(false);
+             Choice3c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
@@ -296,9 +302,9 @@ public void Next(){
                 // Turn off the "Next" button, turn on "Scene" button/s
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true);
-                NextScene2Button.SetActive(true);
-                NextScene3Button.SetActive(true);
+                Choice3a.SetActive(true); // function Choice1aFunct()
+                Choice3b.SetActive(true); // function Choice1bFunct()
+                Choice3c.SetActive(true); // function Choice1bFunct()
         }
 
        // after choice 2b
@@ -365,6 +371,35 @@ public void Next(){
                 NextScene3Button.SetActive(true);
         }
 
+       // after choice 3a
+       else if (primeInt == 70){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+
+       // after choice 3b
+       else if (primeInt == 90){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+
+       // after choice 3c
+       else if (primeInt == 110){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
 
       //Please do NOT delete this final bracket that ends the Next() function:
      }
@@ -421,6 +456,42 @@ public void Next(){
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice3aFunct(){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 69;
+                Choice3a.SetActive(false);
+                Choice3b.SetActive(false);
+                Choice3b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice3bFunct(){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 89;
+                Choice3a.SetActive(false);
+                Choice3b.SetActive(false);
+                Choice3b.SetActive(false);
+                nextButton.SetActive(true);
+                allowSpace = true;
+        }
+        public void Choice3cFunct(){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                primeInt = 109;
+                Choice3a.SetActive(false);
+                Choice3b.SetActive(false);
+                Choice3b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
