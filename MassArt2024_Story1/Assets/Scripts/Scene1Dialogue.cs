@@ -27,7 +27,7 @@ public class Scene1Dialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
+       public AudioSource SFX_stabby;
         private bool allowSpace = true;
 
 // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
@@ -127,7 +127,7 @@ public void Next(){
        else if (primeInt == 20){
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "Narration";
-                Char1speech.text = "The stranger forces you up and holds the knife to you. They’re probably not letting you go so you might as well do what they ask.";
+                Char1speech.text = "The stranger forces you up and holds the knife to you. They're probably not letting you go so you might as well do what they ask.";
                 Char2name.text = "";
                 Char2speech.text = "";
 
@@ -141,6 +141,7 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
+                SFX_stabby.Play();
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -148,7 +149,7 @@ public void Next(){
         }
        else if (primeInt == 31){
                 Char1name.text = "Narration";
-                Char1speech.text = "The stranger forces you up and holds the knife to you. They’re probably not letting you go so you might as well do what they ask.";
+                Char1speech.text = "The stranger forces you up and holds the knife to you. They're probably not letting you go so you might as well do what they ask.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 // Turn off the "Next" button, turn on "Scene" button/s
