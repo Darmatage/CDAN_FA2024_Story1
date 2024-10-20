@@ -1030,7 +1030,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 39;
-                GameHandler.killerFriendship+=5; //Change to +=1 or -=1 for friendship change
+                GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);

@@ -6,8 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
 
-public class GameHandler : MonoBehaviour
-{
+public class GameHandler : MonoBehaviour{
 
     public static int killerFriendship;
     public static bool canPark = true;
@@ -21,6 +20,7 @@ public class GameHandler : MonoBehaviour
     public static bool canEnd1 = false;
     public static bool canEnd2 = false;
     public static bool canEnd3 = false;
+    public TMP_Text scoreText;
     public GameObject pauseMenuUI;
     public AudioMixer mixer;
     public static float volumeLevel = 1.0f;
@@ -43,28 +43,8 @@ public class GameHandler : MonoBehaviour
         GameisPaused = false;
     }
 
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameisPaused) { Resume(); }
-            else { Pause(); }
-        }
-        // Stat tester:
-        //if (Input.GetKey("p")){
-        //       Debug.Log("Player Stat = " + playerStat1);
-        //
-        
-        if (GameHandler.canPark==false && GameHandler.canMall==false && GameHandler.canMill==false){
-            GameHandler.canBridge=true;
-        } return;
-        
-        
-
-
-    }
-
     public void friendshipTest(){
+
 
         if (killerFriendship < 0){
 
@@ -87,6 +67,27 @@ public class GameHandler : MonoBehaviour
 
         }
 
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (GameisPaused) { Resume(); }
+            else { Pause(); }
+        }
+        // Stat tester:
+        //if (Input.GetKey("p")){
+        //       Debug.Log("Player Stat = " + playerStat1);
+        //
+        
+        if (GameHandler.canPark==false && GameHandler.canMall==false && GameHandler.canMill==false){
+            GameHandler.canBridge=true;
+        } 
+
+        string killerFriendshipstring = killerFriendship.ToString();
+        scoreText.SetText(killerFriendshipstring);
+        return;
     }
 
     void Pause()
@@ -124,6 +125,7 @@ public class GameHandler : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
+        killerFriendship = 0;
         // Please also reset all static variables here, for new games!
     }
 
