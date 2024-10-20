@@ -1420,7 +1420,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_text
-      value: Scene1
+      value: "\"Let\u2019s see what else this place has.\" (Toy Store)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3662057847349555299, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_Pivot.x
@@ -1831,7 +1839,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_text
-      value: Scene2
+      value: "\u201CWe\u2019re leaving.\u201D (Food court)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3662057847349555299, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_Pivot.x
@@ -2115,7 +2131,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_text
-      value: Scene3
+      value: "\u201CLet\u2019s just get out of here.\u201D (Leave)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140341614069039337, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 3662057847349555299, guid: 1dba596dfdc03134a839ee050d222d3a, type: 3}
       propertyPath: m_Pivot.x

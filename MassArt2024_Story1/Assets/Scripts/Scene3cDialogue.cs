@@ -65,14 +65,14 @@ public void Next(){
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "You’re into this stuff? Never cared much about fashion. Just another way people try to fit into molds they don’t belong in.";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
                 Char1name.text = "Narration";
-                Char1speech.text = "";
+                Char1speech.text = "The Stranger grabs a moth-eaten jacket and holds it up.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -80,7 +80,7 @@ public void Next(){
         }
         else if (primeInt ==4){
                 Char1name.text = "You";
-                Char1speech.text = "";
+                Char1speech.text = "I dunno, clothes can be fun. It’s not always about fitting in. Sometimes it’s about expressing yourself.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -88,7 +88,7 @@ public void Next(){
         }
         else if (primeInt ==5){
                 Char1name.text = "Narration";
-                Char1speech.text = "";
+                Char1speech.text = "Before the Stranger can respond, a tired voice speaks up from behind a clothing rack.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -97,14 +97,14 @@ public void Next(){
         else if (primeInt ==6){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Stranger";
+                Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+                Char3name.text = "Clothing Store Worker";
+                Char3speech.text = "Expressing yourself... that’s what I used to tell customers.";
         }
         else if (primeInt ==7){
                 Char1name.text = "Narration";
-                Char1speech.text = "";
+                Char1speech.text = "The worker, wearing a store-branded name tag that’s barely legible, steps into the open. Their eyes are bloodshot, like they haven’t slept in days.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -115,78 +115,46 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Toy Store Worker";
-                Char3speech.text = "";
+                Char3name.text = "Clothing Store Worker";
+                Char3speech.text = "But it’s all a lie. Doesn’t matter what you wear. No one really cares.";
         }
         else if (primeInt ==9){
-                Char1name.text = "Narration";
+                Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "Sounds like you’ve given up.";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
         else if (primeInt ==10){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "Stranger";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt ==11){
-                Char1name.text = "";
-                Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "Toy Store Worker";
+                Char3name.text = "Clothing Store Worker";
+                Char3speech.text = "Far worse actually, I’m aware. If someone actually talked to you, they’ll figure you out real quick…";
+        }
+        else if (primeInt ==11){
+                Char1name.text = "Narration";
+                Char1speech.text = "The worker gestures weakly at the Stranger to a row of clothes.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
                 Char3speech.text = "";
         }
         else if (primeInt ==12){
-                Char1name.text = "Narration";
+                Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+                Char3name.text = "Clothing Store Worker";
+                Char3speech.text = "There are plenty of ways to find a getup, even here. You certainly have a skill for it. No worries…There are no mirrors in here anymore.";
         }
-        else if (primeInt ==13){
+       else if (primeInt == 13){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt ==14){
-                Char1name.text = "Narration";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt ==15){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "Toy Store Worker";
-                Char3speech.text = "";
-        }
-        else if (primeInt ==16){
-                Char1name.text = "Narration";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt == 17){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "Stranger";
-                Char2speech.text = "What do you think? Should we stay and help them play dress-up or move on?";
+                Char2speech.text = "So uhh…how do you feel about this? I mean I would love to play dress up, but like…what are you thinking?";
                 Char3name.text = "";
                 Char3speech.text = "";
                 // Turn off the "Next" button, turn on "Choice" buttons
