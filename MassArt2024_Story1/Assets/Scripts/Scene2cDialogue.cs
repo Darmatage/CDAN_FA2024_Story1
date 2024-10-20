@@ -57,6 +57,7 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
+                GameHandler.canMill=false;
                 ArtChar1a.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Narration";

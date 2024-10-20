@@ -27,6 +27,7 @@ public class Scene2aDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
+        public GameObject NextScene4Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -42,6 +43,7 @@ public class Scene2aDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
+             NextScene4Button.SetActive(false);
              nextButton.SetActive(true);
         }
 
@@ -206,8 +208,15 @@ public void Next(){
         nextButton.SetActive(false);
         allowSpace = false;
         NextScene1Button.SetActive(true);
-        NextScene2Button.SetActive(true);
-        NextScene3Button.SetActive(true);
+            if(GameHandler.canMall){
+                NextScene2Button.SetActive(true);
+            }
+            if(GameHandler.canMill){
+                NextScene3Button.SetActive(true);
+            }
+            if(GameHandler.canBridge){
+                NextScene4Button.SetActive(true);
+            }
         }
 
         // after choice 1c
@@ -227,8 +236,15 @@ public void Next(){
             // Turn off the "Next" button, turn on "Scene" button/s
             nextButton.SetActive(false);
             allowSpace = false;
-            NextScene2Button.SetActive(true);
-            NextScene3Button.SetActive(true);
+            if(GameHandler.canMall){
+                NextScene2Button.SetActive(true);
+            }
+            if(GameHandler.canMill){
+                NextScene3Button.SetActive(true);
+            }
+            if(GameHandler.canBridge){
+                NextScene4Button.SetActive(true);
+            }
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
@@ -276,13 +292,16 @@ public void Next(){
                 allowSpace = true;
         }
 
-        public void SceneChange3a(){
+        public void SceneChange1(){
                SceneManager.LoadScene("Scene3a"); //Swings
         }
-        public void SceneChange2b(){
+        public void SceneChange2(){
                 SceneManager.LoadScene("Scene2b"); //Mall
         }
-        public void SceneChange2c(){
+        public void SceneChange3(){
                 SceneManager.LoadScene("Scene2c"); //Mill
+        }
+        public void SceneChange4(){
+                SceneManager.LoadScene("Scene4a"); //Bridge
         }
 }

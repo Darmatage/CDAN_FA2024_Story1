@@ -54,6 +54,13 @@ public class GameHandler : MonoBehaviour
         //if (Input.GetKey("p")){
         //       Debug.Log("Player Stat = " + playerStat1);
         //
+        
+        if (GameHandler.canPark==false && GameHandler.canMall==false && GameHandler.canMill==false){
+            GameHandler.canBridge=true;
+        } return;
+        
+        
+
 
     }
 

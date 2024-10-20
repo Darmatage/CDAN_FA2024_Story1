@@ -19,16 +19,11 @@ public class Scene3bDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a; //Stranger
         public GameObject ArtChar1b; //Stranger diff pose (change to 1b/1c/1d/etc for multiple poses in same scene)
-        public GameObject ArtChar2; //NonStranger, same logic for multiple as above
-        public GameObject ArtBG1; //Background, same logic for multiple as above
-        public GameObject Choice1a;
-        public GameObject Choice1b;
-        public GameObject Choice1c;
+        public GameObject ArtChar2a; //NonStranger, same logic for multiple as above
+        public GameObject ArtChar2b;
+        public GameObject ArtBG1; 
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
-        public GameObject NextScene3Button;
-        public GameObject NextScene4Button;
-        public GameObject NextScene5Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -37,15 +32,12 @@ public class Scene3bDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar2a.SetActive(false);
+             ArtChar2b.SetActive(false);
              ArtBG1.SetActive(true);
-             Choice1a.SetActive(false);
-             Choice1b.SetActive(false);
-             Choice1c.SetActive(false);
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
-             NextScene3Button.SetActive(false);
-             NextScene4Button.SetActive(false);
-             NextScene5Button.SetActive(false);
              nextButton.SetActive(true);
         }
 
@@ -95,7 +87,7 @@ public void Next(){
         }
         else if (primeInt == 5)
         {
-            ArtChar2.SetActive(true);
+            ArtChar2a.SetActive(true);
             Char1name.text = "Narration";
             Char1speech.text = "A sudden movement catches your eye. A figure steps out from behind one of the counters—a toy store worker, exhausted and worn out.";
             Char2name.text = "";
@@ -105,6 +97,8 @@ public void Next(){
         }
         else if (primeInt == 6)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -114,6 +108,8 @@ public void Next(){
         }
         else if (primeInt == 7)
         {
+            ArtChar2a.SetActive(true);
+            ArtChar2b.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -123,6 +119,8 @@ public void Next(){
         }
         else if (primeInt == 8)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -132,6 +130,8 @@ public void Next(){
         }
         else if (primeInt == 9)
         {
+            ArtChar2a.SetActive(true);
+            ArtChar2b.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -141,6 +141,8 @@ public void Next(){
         }
         else if (primeInt == 10)
         {
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "";
@@ -151,6 +153,8 @@ public void Next(){
         }
         else if (primeInt == 11)
         {
+            ArtChar2a.SetActive(true);
+            ArtChar2b.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -161,59 +165,10 @@ public void Next(){
             allowSpace = false;
             NextScene1Button.SetActive(true); // Choice for "Let’s get out of here, all of us."
             NextScene2Button.SetActive(true); // Choice for "This is pointless. Let’s just move on."
-            NextScene3Button.SetActive(true); // Choice for "This mall is so boring dude, let’s just rush to the next place."
         }
 
     //Please do NOT delete this final bracket that ends the Next() function:
 }
-
-// FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
-        public void Choice1aFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
-                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
-                primeInt = 19;
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-        public void Choice1bFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                primeInt = 29;
-                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
-                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-        public void Choice1cFunct(){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-                primeInt = 39;
-                GameHandler.killerFriendship-=1; //Change to +=1 or -=1 for friendship change
-                GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
-                Choice1a.SetActive(false);
-                Choice1b.SetActive(false);
-                nextButton.SetActive(true);
-                allowSpace = true;
-        }
-
 
         public void SceneChange1(){
                SceneManager.LoadScene("Scene3c");
@@ -221,13 +176,4 @@ public void Next(){
         public void SceneChange2(){
                 SceneManager.LoadScene("Scene3d");
         }
-        public void SceneChange3(){
-                SceneManager.LoadScene("Scene2a");
-        }
-        public void SceneChange4(){
-                SceneManager.LoadScene("Scene2c");
-        }
-        public void SceneChange5(){
-                SceneManager.LoadScene("Scene4a");
-        } //In these quotations above put the name of next scene you want to go to
 }

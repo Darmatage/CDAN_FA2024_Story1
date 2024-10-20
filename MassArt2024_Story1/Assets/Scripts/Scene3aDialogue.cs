@@ -193,8 +193,15 @@ public class Scene3aDialogue : MonoBehaviour {
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true); //Go to Mall
-                NextScene2Button.SetActive(true); //Go to Mill
+                if(GameHandler.canMall){
+                    NextScene1Button.SetActive(true); 
+                }
+                if(GameHandler.canMill){
+                    NextScene2Button.SetActive(true); 
+                }
+                if(GameHandler.canBridge){
+                    NextScene3Button.SetActive(true);
+                }
             }
 
             // after choice 1b
@@ -255,8 +262,15 @@ public class Scene3aDialogue : MonoBehaviour {
                 Char2speech.text = "";
                 nextButton.SetActive(false);
                 allowSpace = false;
-                NextScene1Button.SetActive(true); //Go to Mall
-                NextScene2Button.SetActive(true); //Go to Mill
+                if(GameHandler.canMall){
+                    NextScene1Button.SetActive(true); 
+                }
+                if(GameHandler.canMill){
+                    NextScene2Button.SetActive(true); 
+                }
+                if(GameHandler.canBridge){
+                    NextScene3Button.SetActive(true);
+                }
             }
         
 
@@ -299,6 +313,6 @@ public class Scene3aDialogue : MonoBehaviour {
                 SceneManager.LoadScene("Scene2c");
         }
         public void SceneChange3(){
-                SceneManager.LoadScene("");
+                SceneManager.LoadScene("Scene4a");
         } //In these quotations above put the name of next scene you want to go to
 }

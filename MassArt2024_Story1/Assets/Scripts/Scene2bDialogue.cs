@@ -57,6 +57,7 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
+                GameHandler.canMall=false;
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Narration";
                 Char1speech.text = "You reach the mall and the place is empty, the place has been closed recently and front doors were locked shut.";
