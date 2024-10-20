@@ -19,7 +19,9 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a; //Stranger
         public GameObject ArtChar1b; //Stranger diff pose (change to 1b/1c/1d/etc for multiple poses in same scene)
-        public GameObject ArtChar2; //NonStranger, same logic for multiple as above
+        public GameObject ArtChar1c;
+        public GameObject ArtChar2a; //NonStranger, same logic for multiple as above
+        public GameObject ArtChar2b;
         public GameObject ArtBG1; //Background, same logic for multiple as above
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -39,6 +41,10 @@ public class Scene4aDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
+             ArtChar2a.SetActive(false);
+             ArtChar2b.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -381,6 +387,7 @@ public void Next(){
                 if(GameHandler.canEnd3){
                 Choice3c.SetActive(true); 
                 }
+        }
         
 
        // after choice 3a
@@ -599,46 +606,47 @@ public void Next(){
        else if (primeInt == 110){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I don’t understand why it has to be so hard. I don’t understand why I have to pussy out like this!";
                 Char3name.text = "";
                 Char3speech.text = "";
+                ArtChar2a.SetActive(true);
         }
         else if (primeInt == 111){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I...I wasn’t going to kill you.";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
         else if (primeInt == 112){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I was hoping that if I did something like this then I would be able to push past this wall and...";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
         else if (primeInt == 113){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I wanted someone to know I was alive...";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
         else if (primeInt == 114){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Stranger";
+                Char2speech.text = "I wanted you to see me do it...";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
         else if (primeInt == 115){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Narration";
+                Char1speech.text = "The stranger shuffles around waving the knife as they struggle to figure out where to turn the knife. They start to shiver violently, their eyes start to water as they try to keep a gaze on you.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -649,12 +657,12 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
+                Char3name.text = "???";
+                Char3speech.text = "Casey?!";
         }
         else if (primeInt == 117){
-                Char1name.text = "";
-                Char1speech.text = "";
+                Char1name.text = "Narration";
+                Char1speech.text = "A large man rushes over to the teenager. He appears rough with dirt all over. Despite his exterior you can tell he’s doing everything he can to not cry.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -663,8 +671,8 @@ public void Next(){
         else if (primeInt == 118){
                 Char1name.text = "";
                 Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "Dad?!!!";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
@@ -673,10 +681,162 @@ public void Next(){
                 Char1speech.text = "";
                 Char2name.text = "";
                 Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Casey thank god I found you! I’ve been looking everywhere for you!";
+        }
+       else if (primeInt == 120){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "Dad how are you alive?!";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt == 110){
+        else if (primeInt == 121){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "You surprised me when you took out the knife. I hit my head on the counter pretty bad but I’m ok.";
+        }
+        else if (primeInt == 123){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "So I didn’t even hurt you...";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 124){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Of course not! Now look let’s get back home and talk this ou-";
+        }
+        else if (primeInt == 125){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "No! I’m not going back home! I’m tired of this Dad!";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 126){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Casey you are coming home this instant!";
+        }
+        else if (primeInt == 127){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "Dad just fucking listen to me!";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 128){
+                Char1name.text = "You";
+                Char1speech.text = "I don’t mean to get in the middle like this bu-";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 129){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Oh sorry pal. Look I apologize for wha-";
+        }
+        else if (primeInt == 130){
+                Char1name.text = "You";
+                Char1speech.text = "It’s fine...But look, your kid needs help";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+       else if (primeInt == 131){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "You can say that again...";
+        }
+        else if (primeInt == 132){
+                Char1name.text = "You";
+                Char1speech.text = "No I mean they need a therapist or something.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 133){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Excuse me?";
+        }
+        else if (primeInt == 134){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "...";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 135){
+                Char1name.text = "You";
+                Char1speech.text = "They have a lot on their mind that they need help with. They need someone to talk to.";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 136){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "So they can talk to me. They know I’m here to listen. I don’t need to pay some therapist to do what I can do.";
+        }
+        else if (primeInt == 137){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "No matter what anything that happens in the family stays in the family";
+        }
+        else if (primeInt == 138){
+                Char1name.text = "You";
+                Char1speech.text = "I understand that but they don’t seem comfortable talking to you about these issues...";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 139){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "I doubt that. Casey’s a good kid and if they need help they can talk to ME, THEIR FATHER!";
+        }
+        else if (primeInt == 140){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "";
@@ -684,353 +844,145 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
+       else if (primeInt == 141){
                 Char1name.text = "";
                 Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "Dad I don’t want to talk about this.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 142){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "I’m glad you agree.";
+        }
+        else if (primeInt == 143){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "With you, Dad… I don’t want to talk about it with you.";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 144){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Casey...";
+        }
+        else if (primeInt == 145){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "Dad...";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 146){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Your Mother mentioned she’s had a hard time talking to you. She brought up the idea of therapy and I told her it was stupid...";
+        }
+        else if (primeInt == 147){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "I don’t want you doing this but if you think that’s what you need then at least keep the family matters private...";
+        }
+        else if (primeInt == 148){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "Casey";
+                Char2speech.text = "Sure whatever...";
+                Char3name.text = "";
+                Char3speech.text = "";
+        }
+        else if (primeInt == 149){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "...";
+        }
+        else if (primeInt == 150){
+                Char1name.text = "";
+                Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "I’m sorry for any trouble that was caused. I would appreciate if no charges would  be brought up over this.";
+        }
+       else if (primeInt == 151){
+                Char1name.text = "You";
+                Char1speech.text = "Ya no problem, honestly I kinda get where Casey is coming from.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
+        else if (primeInt == 152){
                 Char1name.text = "";
                 Char1speech.text = "";
+                Char2name.text = "";
+                Char2speech.text = "";
+                Char3name.text = "Casey's Dad";
+                Char3speech.text = "Good to hear. Do you need a ride back home?";
+        }
+        else if (primeInt == 153){
+                Char1name.text = "You";
+                Char1speech.text = "Sure I would appreciate that.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
+        else if (primeInt == 154){
+                Char1name.text = "Narration";
+                Char1speech.text = "You, Casey, and Casey’s Father walk back to a beaten up last decades pick up truck. The car ride is full of silence with the occasional conversation from you and Casey. The Father tries to butt in but only makes the situation more awkward. You can tell he’s trying.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
+        else if (primeInt == 155){
+                Char1name.text = "Narration";
+                Char1speech.text = "Eventually you are dropped off right in front of the entrance to your home. You wave as the pick up truck drives away into the distance. The sun starts to rise and birds begin to chirp.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
+        else if (primeInt == 156){
+                Char1name.text = "Narration";
+                Char1speech.text = "You are reminded you have work today but decide after all that it’s best to call in sick.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
+        else if (primeInt == 157){
+                Char1name.text = "Narration";
+                Char1speech.text = "You hope Casey is doing ok...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-       else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
-                Char2name.text = "";
-                Char2speech.text = "";
-                Char3name.text = "";
-                Char3speech.text = "";
-        }
-        else if (primeInt == 110){
-                Char1name.text = "";
-                Char1speech.text = "";
+        else if (primeInt == 158){
+                Char1name.text = "Narration";
+                Char1speech.text = "You hope Casey is doing ok...";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -1039,9 +991,10 @@ public void Next(){
                 nextButton.SetActive(false);
                 allowSpace = false;
         }
+
       //Please do NOT delete this final bracket that ends the Next() function:
-     }
-}
+
+        }
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
                 Char1name.text = "You";
@@ -1077,11 +1030,10 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
                 primeInt = 39;
-                GameHandler.killerFriendship+=1; //Change to +=1 or -=1 for friendship change
+                GameHandler.killerFriendship+=5; //Change to +=1 or -=1 for friendship change
                 GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
                 Choice2a.SetActive(false);
                 Choice2b.SetActive(false);
-
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
@@ -1153,4 +1105,6 @@ public void Next(){
         public void SceneChange3(){
                 SceneManager.LoadScene("Scene5c");
         } //In these quotations above put the name of next scene you want to go to
+
+
 }

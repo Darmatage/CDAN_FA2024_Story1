@@ -53,8 +53,7 @@ public class GameHandler : MonoBehaviour
         // Stat tester:
         //if (Input.GetKey("p")){
         //       Debug.Log("Player Stat = " + playerStat1);
-        //}
-
+        //
 
     }
 
