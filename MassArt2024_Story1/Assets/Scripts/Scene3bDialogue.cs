@@ -27,6 +27,8 @@ public class Scene3bDialogue : MonoBehaviour {
         public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
+        public GameObject NextScene4Button;
+        public GameObject NextScene5Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -42,6 +44,8 @@ public class Scene3bDialogue : MonoBehaviour {
              NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
+             NextScene4Button.SetActive(false);
+             NextScene5Button.SetActive(false);
              nextButton.SetActive(true);
         }
 
@@ -218,6 +222,12 @@ public void Next(){
                 SceneManager.LoadScene("Scene3d");
         }
         public void SceneChange3(){
+                SceneManager.LoadScene("Scene2a");
+        }
+        public void SceneChange4(){
+                SceneManager.LoadScene("Scene2c");
+        }
+        public void SceneChange5(){
                 SceneManager.LoadScene("Scene4a");
         } //In these quotations above put the name of next scene you want to go to
 }

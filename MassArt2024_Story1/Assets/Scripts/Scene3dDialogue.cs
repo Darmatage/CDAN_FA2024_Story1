@@ -239,10 +239,15 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
-
-                NextScene3Button.SetActive(true);
-                NextScene4Button.SetActive(true);
-                NextScene5Button.SetActive(true);
+                if(GameHandler.canPark){
+                        NextScene3Button.SetActive(true);
+                }
+                if(GameHandler.canMill){
+                        NextScene4Button.SetActive(true);
+                }
+                if(GameHandler.canBridge){
+                        NextScene5Button.SetActive(true);
+                }
         }
 
       //Please do NOT delete this final bracket that ends the Next() function:
