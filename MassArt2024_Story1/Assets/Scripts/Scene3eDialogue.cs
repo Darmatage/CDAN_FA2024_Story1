@@ -17,6 +17,8 @@ public class Scene3eDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a; //Stranger
         public GameObject ArtChar1b; //Stranger diff pose (change to 1b/1c/1d/etc for multiple poses in same scene)
+        public GameObject ArtChar1c;
+        public GameObject ArtChar1d;
         public GameObject ArtChar2; //NonStranger, same logic for multiple as above
         public GameObject ArtBG1; //Background, same logic for multiple as above
         public GameObject Choice1a;
@@ -32,6 +34,9 @@ public class Scene3eDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
+             ArtChar1d.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
