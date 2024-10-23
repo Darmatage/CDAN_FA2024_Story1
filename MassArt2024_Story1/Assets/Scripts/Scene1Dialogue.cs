@@ -177,7 +177,9 @@ public void Next(){
                 nextButton.SetActive(true);
                 allowSpace = true;
         }
+
         public void Choice1bFunct(){
+
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger quickly moves their knife to your forearm. The cold and crusty metal is swiped across your skin to draw blood.";
                 Char2name.text = "";
@@ -189,9 +191,15 @@ public void Next(){
                 Choice1b.SetActive(false);
                 nextButton.SetActive(true);
                 allowSpace = true;
+
+        if (primeInt == 29)
+        {
+            SFX_stabby.Play();
         }
 
-        public void SceneChange1(){
+    }
+
+    public void SceneChange1(){
                SceneManager.LoadScene("Scene2a");
         }
         public void SceneChange2(){

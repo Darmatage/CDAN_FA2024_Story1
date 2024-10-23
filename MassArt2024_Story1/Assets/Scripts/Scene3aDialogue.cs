@@ -28,8 +28,8 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
-        private bool allowSpace = true;
+    public AudioSource SFX_stabby;
+    private bool allowSpace = true;
 
 // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
         void Start(){  

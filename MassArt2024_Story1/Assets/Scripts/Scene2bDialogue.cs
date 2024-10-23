@@ -25,8 +25,8 @@ public class Scene2bDialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
-        private bool allowSpace = true;
+    public AudioSource SFX_stabby;
+    private bool allowSpace = true;
 
 // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
         void Start(){  
@@ -130,7 +130,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "hen why did you bring me here?";
+                Char2speech.text = "Then why did you bring me here?";
         }
        else if (primeInt == 21){
                 Char1name.text = "You";

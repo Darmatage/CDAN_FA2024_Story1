@@ -34,8 +34,8 @@ public class Scene4aDialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
-        private bool allowSpace = true;
+    public AudioSource SFX_stabby;
+    private bool allowSpace = true;
 
 // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
         void Start(){  
@@ -431,6 +431,10 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+            if (primeInt == 74)
+            {
+                SFX_stabby.Play();
+            }
         }
        else if (primeInt == 75){
                 Char1name.text = "";
@@ -447,6 +451,10 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+            if (primeInt == 76)
+            {
+                SFX_stabby.Play();
+            }
         }
        else if (primeInt == 77){
                 Char1name.text = "Narration";
@@ -458,7 +466,7 @@ public void Next(){
         }
        else if (primeInt == 78){
                 Char1name.text = "Narration";
-                Char1speech.text = "The last thing you see is the teenager aggressively kicking  you to the side of the bridge as they toss you over into the river. Your vision turned black as soon as you went underwater.";
+                Char1speech.text = "The last thing you see is the teenager aggressively kicking you to the side of the bridge as they toss you over into the river. Your vision turned black as soon as you went underwater.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
@@ -573,6 +581,10 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+            if (primeInt == 100)
+            {
+                SFX_stabby.Play();
+            }
         }
        else if (primeInt == 101){
                 Char1name.text = "Narration";
@@ -651,6 +663,10 @@ public void Next(){
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
+            if (primeInt == 115)
+            {
+                SFX_stabby.Play();
+            }
         }
         else if (primeInt == 116){
                 Char1name.text = "";

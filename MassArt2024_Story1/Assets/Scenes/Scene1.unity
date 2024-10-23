@@ -570,6 +570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &862988742 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 8602589393866233696, guid: c5a98d111b51e7741a260e51eb359256, type: 3}
+  m_PrefabInstance: {fileID: 2105578594}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &908887135
 GameObject:
   m_ObjectHideFlags: 0
@@ -866,7 +871,7 @@ MonoBehaviour:
   NextScene2Button: {fileID: 1584473304}
   NextScene3Button: {fileID: 2030485765}
   nextButton: {fileID: 775701735057816183}
-  SFX_stabby: {fileID: 0}
+  SFX_stabby: {fileID: 862988742}
 --- !u!1 &1242434146
 GameObject:
   m_ObjectHideFlags: 0

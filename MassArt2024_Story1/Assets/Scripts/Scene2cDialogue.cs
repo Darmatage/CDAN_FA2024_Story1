@@ -25,8 +25,8 @@ public class Scene2cDialogue : MonoBehaviour {
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject nextButton;
-       //public AudioSource audioSource1;
-        private bool allowSpace = true;
+    public AudioSource SFX_stabby;
+    private bool allowSpace = true;
 
 // Initial visibility settings. Any new images or buttons need to also be SetActive(false);
         void Start(){  
@@ -75,7 +75,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "It’s also funny you took someone with a knife at your back here…alone…where no one would interrupt us...";
+                Char2speech.text = "It’s also funny you took someone with a knife at your back here… alone… where no one would interrupt us…";
         }
        else if (primeInt ==5){
                 Char1name.text = "You";
@@ -105,7 +105,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "Sounds like this place is well known….yet the building is still here?";
+                Char2speech.text = "Sounds like this place is well known… yet the building is still here?";
         }
        else if (primeInt ==10){
                 Char1name.text = "You";
@@ -287,7 +287,7 @@ public void Next(){
         }
        else if (primeInt == 47){
                 Char1name.text = "Narration";
-                Char1speech.text = "Knowing that Tetanus would be worse than broken bones you hold up the path as you double check your hands for the sharp metal shards.";
+                Char1speech.text = "Knowing that tetanus would be worse than broken bones you hold up the path as you double check your hands for the sharp metal shards.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }

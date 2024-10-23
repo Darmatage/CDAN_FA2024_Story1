@@ -29,6 +29,7 @@ public class Scene2aDialogue : MonoBehaviour {
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
         public GameObject nextButton;
+    public AudioSource SFX_stabby;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
 
@@ -226,6 +227,10 @@ public void Next(){
             Char1speech.text = "";
             Char2name.text = "Stranger";
             Char2speech.text = "I have a FUCKING knife pointed at you and you want to say shit like this?!";
+            if (primeInt == 30)
+            {
+                SFX_stabby.Play();
+            }
         }
         else if (primeInt == 31)
         {
