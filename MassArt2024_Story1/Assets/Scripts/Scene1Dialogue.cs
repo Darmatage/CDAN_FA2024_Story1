@@ -141,13 +141,14 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
-                SFX_stabby.Play();
+                
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "I want to see a cool spot";
         }
        else if (primeInt == 31){
+                
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger forces you up and holds the knife to you. They're probably not letting you go so you might as well do what they ask.";
                 Char2name.text = "";
