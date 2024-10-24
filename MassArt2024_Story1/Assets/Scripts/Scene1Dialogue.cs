@@ -18,7 +18,7 @@ public class Scene1Dialogue : MonoBehaviour {
        //public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
+       public GameObject ArtChar1b;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -34,6 +34,7 @@ public class Scene1Dialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -79,13 +80,16 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
-                ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Hey";
         }
        else if (primeInt == 6){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger brandishes a small knife above your waist as they stand concealing the light behind them.";
                 Char2name.text = "";
@@ -98,6 +102,8 @@ public void Next(){
                 Char2speech.text = "...";
         }
        else if (primeInt == 8){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -105,6 +111,8 @@ public void Next(){
                
         }
        else if (primeInt == 9){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "What";
                 Char2name.text = "";
@@ -112,6 +120,8 @@ public void Next(){
 
         }
        else if (primeInt == 10){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -125,6 +135,8 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 20){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 //gameHandler.AddPlayerStat(1);
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger forces you up and holds the knife to you. They're probably not letting you go so you might as well do what they ask.";
@@ -148,7 +160,8 @@ public void Next(){
                 Char2speech.text = "I want to see a cool spot";
         }
        else if (primeInt == 31){
-                
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger forces you up and holds the knife to you. They're probably not letting you go so you might as well do what they ask.";
                 Char2name.text = "";
