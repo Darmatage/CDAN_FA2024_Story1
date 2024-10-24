@@ -63,7 +63,7 @@ public class GameHandler : MonoBehaviour{
         }
         if (killerFriendship > 2){
 
-            GameHandler.canEnd1=true;
+            GameHandler.canEnd1=false;
             GameHandler.canEnd2=false;
             GameHandler.canEnd3=true;
 

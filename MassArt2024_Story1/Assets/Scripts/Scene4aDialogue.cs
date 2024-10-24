@@ -493,6 +493,7 @@ public void Next(){
         }
        else if (primeInt == 76){
                 ArtChar1e.SetActive(true);
+                ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The snarky teenager takes the blade and stabs it into you wherever he can reach. Your clothes are stained wine red as you are being assaulted.";
