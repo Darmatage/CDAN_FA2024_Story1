@@ -80,6 +80,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 5){
+                Char2speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(2f);
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(true);
                 Char1name.text = "";
@@ -96,6 +97,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==7){
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";

@@ -233,12 +233,14 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 24){
+
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "?!!?!!!";
         }
        else if (primeInt == 25){
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(3f);
                 Char1name.text = "You";
                 Char1speech.text = "RUN!";
                 Char2name.text = "";
@@ -335,6 +337,7 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt == 46){
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(1f);
                 Char1name.text = "Narration";
                 Char1speech.text = "The ladder yelps as the rusted supports snap and the body is split in half. You and the stranger decide to hurry up before the ladder gives in to the overtime you demanded from it.";
                 Char2name.text = "";
@@ -375,6 +378,7 @@ public void Next(){
                 Char2speech.text = "Now that was cool as fuck! This place rules dude!";
         }
        else if (primeInt == 52){
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(0f);
                 ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 ArtChar1c.SetActive(false);
