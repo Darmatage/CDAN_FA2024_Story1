@@ -147,6 +147,7 @@ GameObject:
   - component: {fileID: 4163612405522696979}
   - component: {fileID: 7104485972009203717}
   - component: {fileID: 4052344290546290652}
+  - component: {fileID: 71495695452234535}
   m_Layer: 5
   m_Name: ButtonPlay
   m_TagString: Untagged
@@ -268,4 +269,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 0
+--- !u!114 &71495695452234535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646979506290870669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7316e346e4944f7db69c256b7423563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorArrow: {fileID: 2800000, guid: f725f4aa7edca4d1a81ab6fd10dbe90c, type: 3}
+  cursorArrow2: {fileID: 2800000, guid: 1211326d0deaf41b4bd94cc823776b65, type: 3}

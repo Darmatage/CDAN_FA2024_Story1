@@ -20,6 +20,7 @@ public class GameHandler : MonoBehaviour{
     public static bool canEnd1 = false;
     public static bool canEnd2 = false;
     public static bool canEnd3 = false;
+    public Texture2D cursorArrow;
     public TMP_Text scoreText;
     public GameObject pauseMenuUI;
     public AudioMixer mixer;
@@ -41,6 +42,7 @@ public class GameHandler : MonoBehaviour{
     {
         pauseMenuUI.SetActive(false);
         GameisPaused = false;
+        Cursor.SetCursor(cursorArrow, Vector2.zero, CursorMode.ForceSoftware);
     }
 
     public void friendshipTest(){

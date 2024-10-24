@@ -44,5 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 439ac8739b87d6a4180f1f3940282cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cursorArrow: {fileID: 2800000, guid: f725f4aa7edca4d1a81ab6fd10dbe90c, type: 3}
+  scoreText: {fileID: 0}
   pauseMenuUI: {fileID: 0}
   mixer: {fileID: 24100000, guid: 9161de89fb23348d4ad6c8d0ad82783f, type: 2}
