@@ -1020,8 +1020,20 @@ PrefabInstance:
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3283952298486619675, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.69803923
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283952298486619675, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283952298486619675, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
       propertyPath: m_fontSizeBase
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 3283952298486619675, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4289855743
       objectReference: {fileID: 0}
     - target: {fileID: 4079052550653208307, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
       propertyPath: m_Pivot.x
@@ -1122,6 +1134,22 @@ PrefabInstance:
     - target: {fileID: 4079052550653208307, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989510134345734032, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.69475746
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989510134345734032, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989510134345734032, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4989510134345734032, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4289790207
       objectReference: {fileID: 0}
     - target: {fileID: 8798334091011288154, guid: f12f5d9ae7e5d1e40b924fc34f533358, type: 3}
       propertyPath: m_Name
@@ -1806,7 +1834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2124100851
 RectTransform:
   m_ObjectHideFlags: 0

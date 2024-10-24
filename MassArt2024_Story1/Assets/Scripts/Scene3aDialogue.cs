@@ -19,6 +19,7 @@ public class Scene3aDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a; //Stranger
         public GameObject ArtChar1b; //Stranger diff pose (change to 1b/1c/1d/etc for multiple poses in same scene)
+        public GameObject ArtChar1c;
         public GameObject ArtChar2; //NonStranger, same logic for multiple as above
         public GameObject ArtBG1; //Background, same logic for multiple as above
         public GameObject Choice1a;
@@ -35,6 +36,8 @@ public class Scene3aDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -70,7 +73,9 @@ public class Scene3aDialogue : MonoBehaviour {
         }
         else if (primeInt == 3)
         {
-            ArtChar1a.SetActive(true);
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -78,6 +83,9 @@ public class Scene3aDialogue : MonoBehaviour {
         }
         else if (primeInt == 4)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "Oh, I'm...sorry?";
             Char2name.text = "";
@@ -86,6 +94,9 @@ public class Scene3aDialogue : MonoBehaviour {
 
         else if (primeInt == 5)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -94,6 +105,9 @@ public class Scene3aDialogue : MonoBehaviour {
 
         else if (primeInt == 6)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "That's... interesting.";
             Char2name.text = "";
@@ -102,6 +116,9 @@ public class Scene3aDialogue : MonoBehaviour {
 
         else if (primeInt == 7)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -109,6 +126,9 @@ public class Scene3aDialogue : MonoBehaviour {
         }
         else if (primeInt == 8)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
             Char1name.text = "Narration";
             Char1speech.text = "You feel if you don't listen to them, this could turn sour quick.";
             Char2name.text = "";
@@ -116,6 +136,9 @@ public class Scene3aDialogue : MonoBehaviour {
         }
         else if (primeInt == 9)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -138,6 +161,9 @@ public class Scene3aDialogue : MonoBehaviour {
         
             else if (primeInt == 20)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "You enjoy your own company. In life we aren’t guaranteed companionship in any way. Everyone can be your friend one day and then the next you are public enemy number 1. You need to learn to enjoy things by yourself and to love yourself.";
                 Char2name.text = "";
@@ -145,6 +171,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 21)
             {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -152,6 +181,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 22)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Of course you can! Get yourself a cake! Go to a bunch of local shows. Heck if you want you can get completely shit faced while you are at it.";
                 Char2name.text = "";
@@ -159,6 +191,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 23)
             {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -166,6 +201,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 24)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "I’m just trying to say that those things aren’t only available in groups. Don’t stop living because you think you need others to enjoy it.";
                 Char2name.text = "";
@@ -173,6 +211,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 25)
             {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -207,6 +248,9 @@ public class Scene3aDialogue : MonoBehaviour {
             // after choice 1b
             else if (primeInt == 30)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "However there’s always people out there for you. In fact I have some friends who I knew in highschool but we weren’t friends until after graduation. We then got really close and have made some fond memories with each other.";
                 Char2name.text = "";
@@ -214,6 +258,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 31)
             {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -221,6 +268,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 32)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "So? Sounds like they did you a favor by showing you both they and anyone who believed that stupid rumor wasn’t worth your time. I bet if they looked back at what they did they would think how stupid they were as kids.";
                 Char2name.text = "";
@@ -228,6 +278,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 33)
             {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -235,6 +288,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 34)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "They still aren’t worth your time. It doesn’t matter if it even was today. Find your people and get rid of the rest. Why should you care what people who want you to fit a mold think? If you are trying to fit into a hole not meant for you, that's way crazier than trying to be a lizard in my eyes.";
                 Char2name.text = "";
@@ -242,6 +298,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 35)
             {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -249,6 +308,9 @@ public class Scene3aDialogue : MonoBehaviour {
             }
             else if (primeInt == 36)
             {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger shuffles and jingles uncomfortably on the swing. It might be best to go somewhere else now.";
                 Char2name.text = "";
@@ -279,6 +341,9 @@ public class Scene3aDialogue : MonoBehaviour {
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "You enjoy your own company. In life we aren’t guaranteed companionship in any way.";
                 Char2name.text = "";
@@ -292,6 +357,9 @@ public class Scene3aDialogue : MonoBehaviour {
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "You keep looking. You aren’t going to enjoy everyone’s company and they might not enjoy yours. People are too scared to say if they don’t want to hang out with you but that’s ok, it means they don’t want to hurt your feelings.";
                 Char2name.text = "";

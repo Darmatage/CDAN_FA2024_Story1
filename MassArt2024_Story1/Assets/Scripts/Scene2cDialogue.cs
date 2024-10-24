@@ -17,7 +17,7 @@ public class Scene2cDialogue : MonoBehaviour {
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a; //Stranger
         public GameObject ArtChar1b; //Stranger diff pose (change to 1b/1c/1d/etc for multiple poses in same scene)
-        public GameObject ArtChar2; //NonStranger, same logic for multiple as above
+        public GameObject ArtChar1c; //NonStranger, same logic for multiple as above
         public GameObject ArtBG1; //Background, same logic for multiple as above
         public GameObject Choice1a;
         public GameObject Choice1b;
@@ -32,6 +32,8 @@ public class Scene2cDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -59,6 +61,8 @@ public void Next(){
         else if (primeInt == 2){
                 GameHandler.canMill=false;
                 ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Narration";
                 Char1speech.text = "The Old mill, a sight for sore eyes but a place where most of the local teenagers have made hazardous abode in when trying to act like prepubescent adults away from Father’s eyes. The building is littered with beer bottles, and graffiti";
@@ -66,6 +70,9 @@ public void Next(){
                 Char2speech.text = "";
         }
        else if (primeInt ==3){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -78,6 +85,9 @@ public void Next(){
                 Char2speech.text = "It’s also funny you took someone with a knife at your back here… alone… where no one would interrupt us…";
         }
        else if (primeInt ==5){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Murderers and psychopaths don’t ask their victim to take them to a “cool place”";
                 Char2name.text = "";
@@ -90,60 +100,90 @@ public void Next(){
                 Char2speech.text = "...";
         }
        else if (primeInt ==7){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "People come here often? There’s more bottles in here than a redemption center";
         }
        else if (primeInt ==8){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Ya a lot of the local kids come here to drink and talk gossip. I didn’t come here often but it has it’s memories";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==9){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Sounds like this place is well known… yet the building is still here?";
         }
        else if (primeInt ==10){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "I heard it was supposed to be torn down a few years ago but the Mayor just didn’t bother with moving forward with it. Apparently it’s not causing any problems to the town in his eyes";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==11){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Makes sense to me";
         }
        else if (primeInt ==12){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger starts to look around and admire the brick carcass you stand in. They seems fascinated by the rusted bones of scaffolding that stand above you.";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==13){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "So what was this place before it was shut down?";
         }
        else if (primeInt ==14){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Honestly I don’t know. It felt like it’s been closed down forever and the signs are rusted beyond belief. We all just called it “The Mill” because it sounded cool";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==15){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Well I want to see more of this place, how do we get up higher?";
         }
        else if (primeInt ==16){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "You remember there’s two ways up. A rusted set of stairs that if not already should be on the verge of collapsing, or a ladder full of splintered metal that you remember a friend getting Tetanus from";
                 Char2name.text = "";
@@ -163,12 +203,18 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 20){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Show me these stairs, I’m really curious what’s up there!";
         }
        else if (primeInt == 21){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "You hesitantly make your way to the far end of the mill where  a teenage den was placed in front of the staircase. The stranger grows eager and digs their knife harder into your back to keep you moving.";
                 Char2name.text = "";
@@ -231,6 +277,9 @@ public void Next(){
                 Char2speech.text = "...";
         }
        else if (primeInt == 31){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -243,12 +292,18 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 40){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Oh cool a ladder! I think I saw it back here!";
         }
        else if (primeInt == 41){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The stranger forces you to lead despite being aware of the direction you need to go.";
                 Char2name.text = "";
@@ -311,12 +366,18 @@ public void Next(){
                 Char2speech.text = "...";
         }
        else if (primeInt == 51){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Now that was cool as fuck! This place rules dude!";
         }
        else if (primeInt == 52){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "...";
                 Char2name.text = "";
@@ -338,6 +399,9 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "There’s some stairs…but I don’t think it’s very re-";
                 Char2name.text = "";
@@ -349,6 +413,9 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
+                ArtChar1c.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "There should be a ladder around here somewhere. We just need to be careful bec-";
                 Char2name.text = "";

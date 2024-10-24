@@ -58,6 +58,8 @@ public void Next(){
         }
         else if (primeInt == 2)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -69,6 +71,7 @@ public void Next(){
         else if (primeInt == 3)
         {
             ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "You had a babysitter? What, they didn’t take you outside or anything?";
             Char2name.text = "";
@@ -78,6 +81,8 @@ public void Next(){
         }
         else if (primeInt == 4)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -87,6 +92,8 @@ public void Next(){
         }
         else if (primeInt == 5)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
             ArtChar2a.SetActive(true);
             Char1name.text = "Narration";
             Char1speech.text = "A sudden movement catches your eye. A figure steps out from behind one of the counters—a toy store worker, exhausted and worn out.";
@@ -108,6 +115,8 @@ public void Next(){
         }
         else if (primeInt == 7)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             ArtChar2a.SetActive(true);
             ArtChar2b.SetActive(false);
             Char1name.text = "";
@@ -119,6 +128,8 @@ public void Next(){
         }
         else if (primeInt == 8)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
             ArtChar2a.SetActive(false);
             ArtChar2b.SetActive(true);
             Char1name.text = "";
@@ -130,6 +141,8 @@ public void Next(){
         }
         else if (primeInt == 9)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             ArtChar2a.SetActive(true);
             ArtChar2b.SetActive(false);
             Char1name.text = "";
@@ -141,6 +154,8 @@ public void Next(){
         }
         else if (primeInt == 10)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
             ArtChar2a.SetActive(false);
             ArtChar2b.SetActive(true);
             Char1name.text = "";
@@ -153,6 +168,8 @@ public void Next(){
         }
         else if (primeInt == 11)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
             ArtChar2a.SetActive(true);
             ArtChar2b.SetActive(false);
             Char1name.text = "";

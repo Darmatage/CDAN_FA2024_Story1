@@ -57,7 +57,8 @@ public void Next(){
                 // audioSource1.Play();
         }
         else if (primeInt == 2){
-                ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -67,6 +68,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==3){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "Narration";
                 Char1speech.text = "The Stranger grabs a moth-eaten jacket and holds it up.";
                 Char2name.text = "";
@@ -120,6 +123,8 @@ public void Next(){
                 Char3speech.text = "But it’s all a lie. Doesn’t matter what you wear. No one really cares.";
         }
         else if (primeInt ==9){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 ArtChar2a.SetActive(true);
                 ArtChar2b.SetActive(false);
                 Char1name.text = "";
@@ -130,6 +135,8 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt ==10){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(false);
                 ArtChar2b.SetActive(true);
                 Char1name.text = "";
@@ -160,6 +167,8 @@ public void Next(){
                 Char3speech.text = "There are plenty of ways to find a getup, even here. You certainly have a skill for it. No worries…There are no mirrors in here anymore.";
         }
        else if (primeInt == 13){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 ArtChar2a.SetActive(true);
                 ArtChar2b.SetActive(false);
                 Char1name.text = "";

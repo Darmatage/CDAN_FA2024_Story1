@@ -77,7 +77,8 @@ public void Next(){
                 Char3speech.text = "";
         }
         else if (primeInt ==3){
-                ArtChar1a.SetActive(true);
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -94,6 +95,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==5){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(true);
                 Char1name.text = "Narration";
                 Char1speech.text = "Before you can answer, a figure emerges from behind the counter, wiping their hands on an old apron. The fast food worker, looking like they haven’t seen sunlight in days, stares at you with a vacant expression.";
@@ -123,6 +126,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==8){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -131,6 +136,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==9){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(false);
                 ArtChar2b.SetActive(true);
                 Char1name.text = "";
@@ -161,6 +168,8 @@ public void Next(){
                 Char3speech.text = "I was supposed to leave... but I don’t know how anymore. Been here too long.";
         }
        else if (primeInt ==12){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 ArtChar2a.SetActive(true);
                 ArtChar2b.SetActive(false);
                 Char1name.text = "";
@@ -179,6 +188,8 @@ public void Next(){
                 Char3speech.text = "";
         }
        else if (primeInt ==14){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(false);
                 ArtChar2b.SetActive(true);
                 Char1name.text = "";

@@ -32,6 +32,7 @@ public class Scene2bDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -66,6 +67,7 @@ public void Next(){
         }
        else if (primeInt ==3){
                 ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -90,18 +92,24 @@ public void Next(){
                 Char2speech.text = "...";
         }
        else if (primeInt ==7){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "What’s happened to society?";
         }
        else if (primeInt ==8){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "What?";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt ==9){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
@@ -127,24 +135,32 @@ public void Next(){
 
        // after choice 1a
        else if (primeInt == 20){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Then why did you bring me here?";
         }
        else if (primeInt == 21){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "There were a few places around here I was excited for when I came here";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 22){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Like?";
         }
        else if (primeInt == 23){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Like...";
                 Char2name.text = "";
@@ -163,18 +179,24 @@ public void Next(){
 
        // after choice 1b
        else if (primeInt == 30){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "There were a few places around here I was excited for when I came here";
                 Char2name.text = "";
                 Char2speech.text = "";
         }
        else if (primeInt == 31){
+                ArtChar1a.SetActive(false);
+                ArtChar1b.SetActive(true);
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
                 Char2speech.text = "Like?";
         }
        else if (primeInt == 32){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Like...";
                 Char2name.text = "";
@@ -198,6 +220,8 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "Everytime my parents took us here I'd be bored out of my mind";
                 Char2name.text = "";
@@ -209,6 +233,8 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+                ArtChar1a.SetActive(true);
+                ArtChar1b.SetActive(false);
                 Char1name.text = "You";
                 Char1speech.text = "I miss when this place was still up and running. Fond memories with my parents and friends";
                 Char2name.text = "";
