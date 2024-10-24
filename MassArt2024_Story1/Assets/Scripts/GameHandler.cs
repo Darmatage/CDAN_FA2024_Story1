@@ -113,6 +113,11 @@ public class GameHandler : MonoBehaviour{
 
     public void StartGame()
     {
+        SceneManager.LoadScene("Warning");
+    }
+
+    public void Warning()
+    {
         SceneManager.LoadScene("Scene1");
     }
 
