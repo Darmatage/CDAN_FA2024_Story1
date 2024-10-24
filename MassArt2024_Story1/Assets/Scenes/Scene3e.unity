@@ -1017,7 +1017,7 @@ GameObject:
   - component: {fileID: 968402105}
   - component: {fileID: 968402104}
   m_Layer: 5
-  m_Name: ImageChar1b
+  m_Name: ImageChar1b Talk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 989634265}
   - component: {fileID: 989634264}
   m_Layer: 5
-  m_Name: ImageChar1
+  m_Name: ImageChar1 Idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

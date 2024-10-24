@@ -18,7 +18,9 @@ public class Scene2aDialogue : MonoBehaviour {
        //public Text Char3speech;
         public GameObject DialogueDisplay;
         public GameObject ArtChar1a;
-       //public GameObject ArtChar1b;
+        public GameObject ArtChar1b;
+        public GameObject ArtChar1c;
+        public GameObject ArtChar1d;
        //public GameObject ArtChar2;
         public GameObject ArtBG1;
         public GameObject Choice1a;
@@ -29,7 +31,7 @@ public class Scene2aDialogue : MonoBehaviour {
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
         public GameObject nextButton;
-    public AudioSource SFX_stabby;
+        public AudioSource SFX_stabby;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
 
@@ -37,6 +39,9 @@ public class Scene2aDialogue : MonoBehaviour {
         void Start(){  
              DialogueDisplay.SetActive(false);
              ArtChar1a.SetActive(false);
+             ArtChar1b.SetActive(false);
+             ArtChar1c.SetActive(false);
+             ArtChar1d.SetActive(false);
              ArtBG1.SetActive(true);
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
@@ -67,7 +72,10 @@ public void Next(){
         else if (primeInt == 2)
         {
             GameHandler.canPark=false;
-            ArtChar1a.SetActive(true);
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
             DialogueDisplay.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
@@ -94,6 +102,11 @@ public void Next(){
         // after choice 1a
         else if (primeInt == 5)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
+
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -101,6 +114,10 @@ public void Next(){
         }
         else if (primeInt == 6)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "No! There was this one movie where an ADULT man had to fight like 7 evil exes and in this scene he’s sitting wi-";
             Char2name.text = "";
@@ -108,6 +125,10 @@ public void Next(){
         }
         else if (primeInt == 7)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -115,6 +136,10 @@ public void Next(){
         }
         else if (primeInt == 8)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "Ok I don’t think she deserves the amount of hate some people bring to her. She has some good traits. I mean the book and movie have 2 different endings and you can argue th-";
             Char2name.text = "";
@@ -122,6 +147,10 @@ public void Next(){
         }
         else if (primeInt == 9)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(true);
+            ArtChar1d.SetActive(false);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -129,6 +158,10 @@ public void Next(){
         }
         else if (primeInt == 10)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "...";
             Char2name.text = "";
@@ -143,6 +176,10 @@ public void Next(){
         }
         else if (primeInt == 12)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "Narration";
             Char1speech.text = "You and the stranger sit on the swing set like moody teenagers for a moment talking about how business men perceive how teenagers act";
             Char2name.text = "";
@@ -178,6 +215,10 @@ public void Next(){
 
         else if (primeInt == 22)
         {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
             Char1name.text = "You";
             Char1speech.text = "Wait!..";
             Char2name.text = "";
@@ -194,6 +235,10 @@ public void Next(){
 
         else if (primeInt == 24)
         {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(true);
             Char1name.text = "";
             Char1speech.text = "";
             Char2name.text = "Stranger";
@@ -257,6 +302,10 @@ public void Next(){
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Playgrounds aren’t just for kids. Haven’t you ever seen moody teenagers in movies?";
                 Char2name.text = "";
@@ -271,6 +320,10 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1bFunct(){
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "What’s wrong with playgrounds? You can come here to play basketball, use the monkey bars as pull ups, and there’s no age limit to using the swings.";
                 Char2name.text = "";
@@ -283,6 +336,10 @@ public void Next(){
                 allowSpace = true;
         }
         public void Choice1cFunct(){
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar1c.SetActive(false);
+            ArtChar1d.SetActive(false);
                 Char1name.text = "YOU";
                 Char1speech.text = "Well if I’m going to be babysitting I might as well take you to something familiar.";
                 Char2name.text = "";

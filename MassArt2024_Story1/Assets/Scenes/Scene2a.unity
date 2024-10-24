@@ -732,7 +732,7 @@ GameObject:
   - component: {fileID: 908887138}
   - component: {fileID: 908887137}
   m_Layer: 5
-  m_Name: ImageChar1c
+  m_Name: ImageChar1c mad
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,6 +796,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908887135}
   m_CullTransparentMesh: 1
+--- !u!1 &1049739695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1049739698}
+  - component: {fileID: 1049739697}
+  - component: {fileID: 1049739696}
+  m_Layer: 5
+  m_Name: ImageChar1d sad
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &1049739696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049739695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 5f625cb4f3a0d3b46b615fe73c194d49, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1049739697
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049739695}
+  m_CullTransparentMesh: 1
+--- !u!224 &1049739698
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049739695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1237565111}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1280, y: 720}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1058091098
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1098,6 +1174,7 @@ RectTransform:
   - {fileID: 1270637212}
   - {fileID: 1289337205}
   - {fileID: 908887136}
+  - {fileID: 1049739698}
   - {fileID: 1105783402}
   - {fileID: 384316416}
   - {fileID: 1863909946}
@@ -1138,6 +1215,9 @@ MonoBehaviour:
   Char2speech: {fileID: 7224530700855531918}
   DialogueDisplay: {fileID: 7224530700855531917}
   ArtChar1a: {fileID: 1270637211}
+  ArtChar1b: {fileID: 1289337204}
+  ArtChar1c: {fileID: 908887135}
+  ArtChar1d: {fileID: 1049739695}
   ArtBG1: {fileID: 584802081}
   Choice1a: {fileID: 355333195}
   Choice1b: {fileID: 438154703}
@@ -1252,7 +1332,7 @@ GameObject:
   - component: {fileID: 1270637214}
   - component: {fileID: 1270637213}
   m_Layer: 5
-  m_Name: ImageChar1
+  m_Name: ImageChar1a idle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1328,7 +1408,7 @@ GameObject:
   - component: {fileID: 1289337207}
   - component: {fileID: 1289337206}
   m_Layer: 5
-  m_Name: ImageChar1b
+  m_Name: ImageChar1b talk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
