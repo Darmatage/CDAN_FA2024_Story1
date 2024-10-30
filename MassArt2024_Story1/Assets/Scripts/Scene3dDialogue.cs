@@ -25,7 +25,9 @@ public class Scene3dDialogue : MonoBehaviour {
         public GameObject Choice1a;
         public GameObject Choice1b;
         public GameObject Choice1c;
-        public GameObject NextScene1Button;
+    public GameObject Choice1d;
+    public GameObject Choice1e;
+    public GameObject NextScene1Button;
         public GameObject NextScene2Button;
         public GameObject NextScene3Button;
         public GameObject NextScene4Button;
@@ -44,7 +46,9 @@ public class Scene3dDialogue : MonoBehaviour {
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
-             NextScene1Button.SetActive(false);
+        Choice1d.SetActive(false);
+        Choice1e.SetActive(false);
+        NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
              NextScene4Button.SetActive(false);
@@ -82,7 +86,7 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "Man, I used to hate these places. All the noise, the crowds... but the food? Couldn’t get enough of it.";
+                Char2speech.text = "Man, I used to hate these places. All the noise, the crowds... but the food? Couldn’t get enough of it. Especially spicy food. Really can't get enough of that flaming hot shit.";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
@@ -90,22 +94,50 @@ public void Next(){
                 Char1name.text = "";
                 Char1speech.text = "";
                 Char2name.text = "Stranger";
-                Char2speech.text = "Have you ever hung out in places like this?";
+                Char2speech.text = "What do you think about spicy stuff?";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==5){
+
+        else if (primeInt == 5)
+        {
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "What do you think about spicy stuff?";
+            Char3name.text = "";
+            Char3speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice1d.SetActive(true); // function Choice1aFunct()
+            Choice1e.SetActive(true); // function Choice1bFunct()
+        }
+
+        // after choice 1d
+        else if (primeInt == 6)
+        {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Well don't even THINK about trying to take any of it away from me. It's ALL MINE!";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+
+        else if (primeInt ==7){
                 ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(true);
                 Char1name.text = "Narration";
-                Char1speech.text = "Before you can answer, a figure emerges from behind the counter, wiping their hands on an old apron. The fast food worker, looking like they haven’t seen sunlight in days, stares at you with a vacant expression.";
+                Char1speech.text = "Before you can respond, a figure emerges from behind the counter, wiping their hands on an old apron. The fast food worker, looking like they haven’t seen sunlight in days, stares at you with a vacant expression.";
                 Char2name.text = "";
                 Char2speech.text = "";
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==6){
+       else if (primeInt ==8){
                 ArtChar2a.SetActive(false);
                 ArtChar2b.SetActive(true);
                 Char1name.text = "";
@@ -115,7 +147,7 @@ public void Next(){
                 Char3name.text = "Fast Food Worker";
                 Char3speech.text = "You’re... late. The kitchen's closed... but if you're hungry, I can... make you something… something infested…";
         }
-       else if (primeInt ==7){
+       else if (primeInt ==9){
                 ArtChar2a.SetActive(true);
                 ArtChar2b.SetActive(false);
                 Char1name.text = "Narration";
@@ -125,7 +157,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==8){
+       else if (primeInt ==10){
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(true);
                 Char1name.text = "";
@@ -135,7 +167,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==9){
+       else if (primeInt ==11){
                 ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(false);
@@ -147,7 +179,7 @@ public void Next(){
                 Char3name.text = "Fast Food Worker";
                 Char3speech.text = "Yeah. Forgot to punch out... when the place closed. Thought maybe someone would come back. But no one did.";
         }
-       else if (primeInt ==10){
+       else if (primeInt ==12){
                 ArtChar2a.SetActive(true);
                 ArtChar2b.SetActive(false);
                 Char1name.text = "Narration";
@@ -157,7 +189,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==11){
+       else if (primeInt ==13){
                 ArtChar2a.SetActive(false);
                 ArtChar2b.SetActive(true);
                 Char1name.text = "";
@@ -167,7 +199,7 @@ public void Next(){
                 Char3name.text = "Fast Food Worker";
                 Char3speech.text = "I was supposed to leave... but I don’t know how anymore. Been here too long.";
         }
-       else if (primeInt ==12){
+       else if (primeInt ==14){
                 ArtChar1a.SetActive(false);
                 ArtChar1b.SetActive(true);
                 ArtChar2a.SetActive(true);
@@ -179,7 +211,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==13){
+       else if (primeInt ==15){
                 Char1name.text = "Narration";
                 Char1speech.text = "The worker looks at you, eyes pleading.";
                 Char2name.text = "";
@@ -187,7 +219,7 @@ public void Next(){
                 Char3name.text = "";
                 Char3speech.text = "";
         }
-       else if (primeInt ==14){
+       else if (primeInt ==16){
                 ArtChar1a.SetActive(true);
                 ArtChar1b.SetActive(false);
                 ArtChar2a.SetActive(false);
@@ -199,7 +231,7 @@ public void Next(){
                 Char3name.text = "Fast Food Worker";
                 Char3speech.text = "You should leave... while you still can.";
         }
-       else if (primeInt == 15){
+       else if (primeInt == 17){
                 ArtChar2b.SetActive(false);
                 Char1name.text = "";
                 Char1speech.text = "";
@@ -261,8 +293,207 @@ public void Next(){
                 }
         }
 
-      //Please do NOT delete this final bracket that ends the Next() function:
-     }
+
+        // after choice 1e
+        else if (primeInt == 50)
+        {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "Good... That's right, enjoy your plain flavorless bullshit.";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+
+        else if (primeInt == 51)
+        {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar2a.SetActive(true);
+            Char1name.text = "Narration";
+            Char1speech.text = "Before you can respond, a figure emerges from behind the counter, wiping their hands on an old apron. The fast food worker, looking like they haven’t seen sunlight in days, stares at you with a vacant expression.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 52)
+        {
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "Fast Food Worker";
+            Char3speech.text = "You’re... late. The kitchen's closed... but if you're hungry, I can... make you something… something infested…";
+        }
+        else if (primeInt == 53)
+        {
+            ArtChar2a.SetActive(true);
+            ArtChar2b.SetActive(false);
+            Char1name.text = "Narration";
+            Char1speech.text = "They shuffle awkwardly behind the counter, pulling out a stained spatula.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 54)
+        {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "You’ve been here this whole time?";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 55)
+        {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "Fast Food Worker";
+            Char3speech.text = "Yeah. Forgot to punch out... when the place closed. Thought maybe someone would come back. But no one did.";
+        }
+        else if (primeInt == 56)
+        {
+            ArtChar2a.SetActive(true);
+            ArtChar2b.SetActive(false);
+            Char1name.text = "Narration";
+            Char1speech.text = "They sigh, dropping the spatula.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 57)
+        {
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "Fast Food Worker";
+            Char3speech.text = "I was supposed to leave... but I don’t know how anymore. Been here too long.";
+        }
+        else if (primeInt == 58)
+        {
+            ArtChar1a.SetActive(false);
+            ArtChar1b.SetActive(true);
+            ArtChar2a.SetActive(true);
+            ArtChar2b.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "Stranger";
+            Char2speech.text = "This guy reaks";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 59)
+        {
+            Char1name.text = "Narration";
+            Char1speech.text = "The worker looks at you, eyes pleading.";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+        }
+        else if (primeInt == 60)
+        {
+            ArtChar1a.SetActive(true);
+            ArtChar1b.SetActive(false);
+            ArtChar2a.SetActive(false);
+            ArtChar2b.SetActive(true);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "Fast Food Worker";
+            Char3speech.text = "You should leave... while you still can.";
+        }
+        else if (primeInt == 61)
+        {
+            ArtChar2b.SetActive(false);
+            Char1name.text = "";
+            Char1speech.text = "";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "Fast Food Worker";
+            Char3speech.text = "You should leave... while you still can.";
+            // Turn off the "Next" button, turn on "Choice" buttons
+            nextButton.SetActive(false);
+            allowSpace = false;
+            Choice1a.SetActive(true); // function Choice1aFunct()
+            Choice1b.SetActive(true); // function Choice1bFunct()
+            Choice1c.SetActive(true); // function Choice1bFunct()
+        }
+
+        // after choice 1a
+        else if (primeInt == 20)
+        {
+            //gameHandler.AddPlayerStat(1);
+            Char1name.text = "You";
+            Char1speech.text = "Lets go to the toy store, wonder what's leftover";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene1Button.SetActive(true);
+        }
+
+        // after choice 1b
+        else if (primeInt == 30)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "Lets go to the clothing store, I want to see what they've got";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            nextButton.SetActive(false);
+            allowSpace = false;
+            NextScene2Button.SetActive(true);
+        }
+
+        // after choice 1c
+        else if (primeInt == 40)
+        {
+            Char1name.text = "You";
+            Char1speech.text = "This guy bums me out, lets get out of here";
+            Char2name.text = "";
+            Char2speech.text = "";
+            Char3name.text = "";
+            Char3speech.text = "";
+            if (GameHandler.canPark)
+            {
+                NextScene3Button.SetActive(true);
+            }
+            if (GameHandler.canMill)
+            {
+                NextScene4Button.SetActive(true);
+            }
+            if (GameHandler.canBridge)
+            {
+                NextScene5Button.SetActive(true);
+            }
+        }
+
+
+        //Please do NOT delete this final bracket that ends the Next() function:
+    }
 
 // FUNCTIONS FOR BUTTONS TO ACCESS (Choice #1 and SceneChanges)
         public void Choice1aFunct(){
@@ -310,8 +541,51 @@ public void Next(){
                 allowSpace = true;
         }
 
+    public void Choice1dFunct()
+    {
+        ArtChar1a.SetActive(true);
+        ArtChar1b.SetActive(false);
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "Stranger";
+        Char2speech.text = "Well don't even THINK about trying to take any of it away from me. It's ALL MINE!";
+        Char3name.text = "";
+        Char3speech.text = "";
+        primeInt = 6;
+        GameHandler.killerFriendship -= 1;
+        GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        Choice1e.SetActive(false);
+        Choice1d.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
 
-        public void SceneChange1(){
+    public void Choice1eFunct()
+    {
+        ArtChar1a.SetActive(true);
+        ArtChar1b.SetActive(false);
+        Char1name.text = "";
+        Char1speech.text = "";
+        Char2name.text = "Stranger";
+        Char2speech.text = "Good... That's right, enjoy your plain flavorless bullshit.";
+        Char3name.text = "";
+        Char3speech.text = "";
+        primeInt = 50;
+        GameHandler.killerFriendship += 1;
+        GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>().friendshipTest();
+        Choice1a.SetActive(false);
+        Choice1b.SetActive(false);
+        Choice1c.SetActive(false);
+        Choice1e.SetActive(false);
+        Choice1d.SetActive(false);
+        nextButton.SetActive(true);
+        allowSpace = true;
+    }
+
+    public void SceneChange1(){
                SceneManager.LoadScene("Scene3b"); //Toy Store
         }
         public void SceneChange2(){
