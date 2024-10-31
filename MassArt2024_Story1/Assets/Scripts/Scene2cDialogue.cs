@@ -240,7 +240,7 @@ public void Next(){
                 Char2speech.text = "?!!?!!!";
         }
        else if (primeInt == 25){
-                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(3f);
+                Char1speech.gameObject.GetComponentInParent<Shaker>().ChangeShake(1f);
                 Char1name.text = "You";
                 Char1speech.text = "RUN!";
                 Char2name.text = "";

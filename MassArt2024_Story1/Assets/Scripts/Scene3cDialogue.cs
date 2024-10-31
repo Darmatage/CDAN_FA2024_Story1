@@ -22,10 +22,13 @@ public class Scene3cDialogue : MonoBehaviour {
         public GameObject ArtChar2a; //NonStranger, same logic for multiple as above\
         public GameObject ArtChar2b;
         public GameObject ArtBG1; //Background, same logic for multiple as above
-    public GameObject Choice1a;
-    public GameObject Choice1b;
-    public GameObject NextScene1Button;
+        public GameObject Choice1a;
+        public GameObject Choice1b;
+        public GameObject NextScene1Button;
         public GameObject NextScene2Button;
+        public GameObject NextScene3Button;
+        public GameObject NextScene4Button;
+        public GameObject NextScene5Button;
         public GameObject nextButton;
        //public AudioSource audioSource1;
         private bool allowSpace = true;
@@ -38,9 +41,12 @@ public class Scene3cDialogue : MonoBehaviour {
              ArtChar2a.SetActive(false);
              ArtChar2b.SetActive(false);
              ArtBG1.SetActive(true);
-        Choice1a.SetActive(false);
-        Choice1b.SetActive(false);
-        NextScene1Button.SetActive(false);
+             Choice1a.SetActive(false);
+             Choice1b.SetActive(false);
+             NextScene3Button.SetActive(false);
+             NextScene4Button.SetActive(false);
+             NextScene5Button.SetActive(false);
+             NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              nextButton.SetActive(true);
         }
@@ -63,6 +69,7 @@ public void Next(){
         }
         else if (primeInt == 2)
         {
+            GameHandler.canCloth=false;
             ArtChar1a.SetActive(false);
             ArtChar1b.SetActive(true);
             DialogueDisplay.SetActive(true);
@@ -238,8 +245,23 @@ public void Next(){
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
+            if (GameHandler.canToy){
             NextScene1Button.SetActive(true); // function Choice1aFunct()
+            }
+            if (GameHandler.canFood){
             NextScene2Button.SetActive(true); // function Choice1bFunct()
+            }
+            if (GameHandler.canPark){
+                NextScene3Button.SetActive(true);
+            }
+            if (GameHandler.canMill)
+            {
+                NextScene4Button.SetActive(true);
+            }
+            if (GameHandler.canBridge)
+            {
+                NextScene5Button.SetActive(true);
+            }
         }
 
         // after choice 1b
@@ -358,8 +380,21 @@ public void Next(){
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
+            if (GameHandler.canToy){
             NextScene1Button.SetActive(true); // function Choice1aFunct()
+            }
+            if (GameHandler.canFood){
             NextScene2Button.SetActive(true); // function Choice1bFunct()
+            }   
+            if (GameHandler.canPark){
+                NextScene3Button.SetActive(true);
+            }
+            if (GameHandler.canMill){
+                NextScene4Button.SetActive(true);
+            }
+            if (GameHandler.canBridge){
+                NextScene5Button.SetActive(true);
+            }
         }
 
         //Please do NOT delete this final bracket that ends the Next() function:
@@ -404,10 +439,19 @@ public void Next(){
 
     }
 
-    public void SceneChange1(){
-               SceneManager.LoadScene("Scene3b");
+        public void SceneChange1(){
+               SceneManager.LoadScene("Scene3b"); //Toy store
         }
         public void SceneChange2(){
-                SceneManager.LoadScene("Scene3d");
-        } //In these quotations above put the name of next scene you want to go to
+                SceneManager.LoadScene("Scene3d"); //Food court
+        }
+        public void SceneChange3(){
+                SceneManager.LoadScene("Scene2a"); //Park
+        }
+        public void SceneChange4(){
+                SceneManager.LoadScene("Scene2c"); //Mill
+        }
+        public void SceneChange5(){
+                SceneManager.LoadScene("Scene4a"); //Bridge //In these quotations above put the name of next scene you want to go to
+                    }
 }

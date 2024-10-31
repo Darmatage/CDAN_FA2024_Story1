@@ -46,9 +46,9 @@ public class Scene3dDialogue : MonoBehaviour {
              Choice1a.SetActive(false);
              Choice1b.SetActive(false);
              Choice1c.SetActive(false);
-        Choice1d.SetActive(false);
-        Choice1e.SetActive(false);
-        NextScene1Button.SetActive(false);
+             Choice1d.SetActive(false);
+             Choice1e.SetActive(false);
+             NextScene1Button.SetActive(false);
              NextScene2Button.SetActive(false);
              NextScene3Button.SetActive(false);
              NextScene4Button.SetActive(false);
@@ -72,6 +72,7 @@ public void Next(){
                 // audioSource1.Play();
         }
        else if (primeInt ==2){
+                GameHandler.canFood=false;
                 DialogueDisplay.SetActive(true);
                 Char1name.text = "Narration";
                 Char1speech.text = "The food court is a ghost town of overturned chairs, grime-covered tables, and stale air. The scent of long-spoiled food lingers faintly. The dim lighting flickers as you and the Stranger walk past an abandoned fast food counter.";
@@ -434,8 +435,12 @@ public void Next(){
             // Turn off the "Next" button, turn on "Choice" buttons
             nextButton.SetActive(false);
             allowSpace = false;
+            if (GameHandler.canToy){
             Choice1a.SetActive(true); // function Choice1aFunct()
+            }
+            if (GameHandler.canCloth){
             Choice1b.SetActive(true); // function Choice1bFunct()
+            }   
             Choice1c.SetActive(true); // function Choice1bFunct()
         }
 
@@ -477,16 +482,13 @@ public void Next(){
             Char2speech.text = "";
             Char3name.text = "";
             Char3speech.text = "";
-            if (GameHandler.canPark)
-            {
+            if (GameHandler.canPark){
                 NextScene3Button.SetActive(true);
             }
-            if (GameHandler.canMill)
-            {
+            if (GameHandler.canMill){
                 NextScene4Button.SetActive(true);
             }
-            if (GameHandler.canBridge)
-            {
+            if (GameHandler.canBridge){
                 NextScene5Button.SetActive(true);
             }
         }
